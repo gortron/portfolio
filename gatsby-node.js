@@ -2,15 +2,12 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const result = await graphql(`
     {
       allMarkdownRemark {
-        edges {
-          node {
-            frontmatter {
-              title
-              slug
-              date
-              description
-            }
-            excerpt
+        nodes {
+          frontmatter {
+            title
+            date
+            description
+            slug
           }
         }
       }
@@ -21,16 +18,16 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panic("Tried querying for Markdown, but failed!", result.errors)
   }
 
-  // console.log(result.data.allMarkdownRemark.edges[0])
-  const posts = result.data.allMarkdownRemark.edges
+  console.log(result.data.allMarkdownRemark.nodes)
+  const posts = result.data.allMarkdownRemark.nodes
 
   posts.forEach(post => {
     // console.log(post.node.frontmatter)
     actions.createPage({
-      path: post.node.frontmatter.slug,
+      path: post.frontmatter.slug,
       component: require.resolve("./src/templates/post.js"),
       context: {
-        slug: post.node.frontmatter.slug,
+        slug: post.frontmatter.slug,
       },
     })
   })

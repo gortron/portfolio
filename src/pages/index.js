@@ -1,12 +1,33 @@
 import React from "react"
-import { Link } from "gatsby"
+import { graphql } from "gatsby"
 import Layout from "../containers/layout"
 import SEO from "../components/seo"
+import PostPreview from "../components/post-preview"
 
-const IndexPage = () => (
+export const query = graphql`
+  {
+    allMarkdownRemark {
+      posts: nodes {
+        frontmatter {
+          title
+          date
+          description
+          slug
+        }
+        excerpt(pruneLength: 280)
+      }
+    }
+  }
+`
+
+const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
     <h1>Home Page</h1>
+    {data.allMarkdownRemark.posts.map(post => (
+      <PostPreview key={post.slug} post={post} />
+    ))}
+    {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
   </Layout>
 )
 
