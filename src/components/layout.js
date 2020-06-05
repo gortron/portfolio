@@ -1,51 +1,49 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.org/docs/use-static-query/
- */
-
 import React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
-
+import { Global, css } from "@emotion/core"
+import { Helmet } from "react-helmet"
 import Header from "./header"
-import "./layout.css"
+import useSiteMetadata from "../hooks/use-sitemetadata"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
+  const { title, description, author } = useSiteMetadata()
   return (
     <>
-      <Header siteTitle={data.site.siteMetadata.title} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
-        </footer>
-      </div>
+      <Global
+        styles={css`
+          * {
+            box-sizing: border-box;
+            margin: 0;
+          }
+
+          * + * {
+            margin-top: 1rem;
+          }
+
+          > div {
+            margin-top: 0;
+          }
+
+          html,
+          body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+              Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
+              "Helvetica Neue", sans-serif;
+          }
+          font-size: 18px;
+          line-height: 1.4;
+        `}
+      />
+      <Helmet>
+        <html lang="en" />
+        <title>{title}</title>
+        <meta name="description" content={description} />
+        <meta name="author" content={author} />
+      </Helmet>
+      <Header />
+      <main>{children}</main>
     </>
   )
-}
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
 }
 
 export default Layout
