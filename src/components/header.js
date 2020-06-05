@@ -10,9 +10,10 @@ const NavLink = styled(Link)`
   margin: 0 0.5rem 0 0;
   padding: 0.25rem;
   text-decoration: none;
+  color: #50514f;
 
   &.current-page {
-    border-bottom: 2px solid #222;
+    border-bottom: 2px solid #50514f;
   }
 
   &.last-of-type {
@@ -25,6 +26,7 @@ const Header = () => (
     css={css`
       display: flex;
       justify-content: space-between;
+
       background: #fff4e4;
       border-bottom: 1px solid #50514f;
 
