@@ -5,9 +5,10 @@ const PostPreview = ({ post }) => {
   const { title, date, description, slug } = post.frontmatter
   return (
     <>
+      {/* <pre>{JSON.stringify(post, null, 2)}</pre> */}
       <h3>{title}</h3>
       <p>{post.excerpt}</p>
-      <Link to={post.slug}>Read</Link>
+      <Link to={slug}>Read</Link>
     </>
   )
 }
