@@ -5,25 +5,29 @@ import Layout from "../containers/layout"
 
 export const query = graphql`
   query($slug: String!) {
-    allMarkdownRemark(filter: { frontmatter: { slug: { eq: $slug } } }) {
-      edges {
-        node {
-          frontmatter {
-            title
-            date
-            description
-          }
-        }
+    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+      frontmatter {
+        date(formatString: "MMMM DD, YYYY")
+        slug
+        title
       }
+      html
+      excerpt
+      rawMarkdownBody
     }
   }
 `
 
 const PostTemplate = ({ data }) => {
-  const post = data
+  // const post = data
+  const { title, date, description } = data.markdownRemark.frontmatter
+  const { excerpt, html, rawMarkdownBody } = data.markdownRemark
   return (
     <Layout>
-      <pre>{JSON.stringify(data, null, 2)}</pre>
+      <h1>{title}</h1>
+      <div dangerouslySetInnerHTML={{ __html: html }}></div>
+
+      {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
     </Layout>
   )
 }

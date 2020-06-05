@@ -1,6 +1,6 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const result = await graphql(`
-    query {
+    {
       allMarkdownRemark {
         edges {
           node {
@@ -10,6 +10,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
               date
               description
             }
+            excerpt
           }
         }
       }
