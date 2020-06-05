@@ -15,7 +15,12 @@ const NavLink = styled(Link)`
 
 // Note the calculation for padding!
 const Header = () => (
-  <header>
+  <header
+    css={css`
+      display: flex;
+      justify-content: space-between;
+    `}
+  >
     <NavLink to="/" fontWeight="bold">
       Gordy
     </NavLink>
