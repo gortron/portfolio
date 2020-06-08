@@ -12,7 +12,6 @@ export const query = graphql`
         frontmatter {
           title
           date
-          description
           slug
           tags
           image {
@@ -35,7 +34,8 @@ const IndexPage = ({ data }) => (
     <div
       css={css`
         display: flex;
-        padding: 0 9vw 0 9vw;
+        flex-wrap: wrap;
+        padding: 5vw 5vw 5vw 5vw;
       `}
     >
       {data.allMarkdownRemark.posts.map(post => (

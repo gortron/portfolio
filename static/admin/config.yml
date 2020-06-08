@@ -10,7 +10,10 @@ collections:
     label: "Post"
     folder: "content/posts"
     create: true
-    slug: "{{slug}}"
+    slug:
+      encoding: "ascii"
+      clean_accents: true
+      sanitize_replacement: "-"
     editor:
       preview: false
     fields:
@@ -18,5 +21,4 @@ collections:
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Description", name: "description", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown" }

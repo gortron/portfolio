@@ -19,13 +19,20 @@ export const query = graphql`
 `
 
 const PostTemplate = ({ data }) => {
-  // const post = data
-  const { title, date, description } = data.markdownRemark.frontmatter
-  const { excerpt, html, rawMarkdownBody } = data.markdownRemark
+  // const { title, date, description } = data.markdownRemark.frontmatter
+  // const { excerpt, html, rawMarkdownBody } = data.markdownRemark
+  const { title } = data.markdownRemark.frontmatter
+  const { html } = data.markdownRemark
   return (
     <Layout>
-      <h1>{title}</h1>
-      <div dangerouslySetInnerHTML={{ __html: html }}></div>
+      <div
+        css={css`
+          padding: 0 10vw 0 10vw;
+        `}
+      >
+        <h1>{title}</h1>
+        <div dangerouslySetInnerHTML={{ __html: html }}></div>
+      </div>
 
       {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
     </Layout>
