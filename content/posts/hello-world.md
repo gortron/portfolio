@@ -6,6 +6,7 @@ slug: hello-world
 image: ../images/milan_selfportrait.jpg
 tags:
   - writing coding
+thumbnail: /images/milan_selfportrait.jpg
 ---
 
 _🎤_ Hey, is this thing _on?_
