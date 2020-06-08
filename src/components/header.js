@@ -7,17 +7,22 @@ const NavLink = styled(Link)`
   font-size: 1rem;
   font-weight: ${props => props.fontWeight || "normal"};
   line-height: 1;
-  margin: 0 0.75rem 0 0;
+  margin: 0 1rem 0 1rem;
   padding: 0.25rem;
   text-decoration: none;
-  color: #50514f;
+  color: black;
+  font-size: 20px;
 
-  &.current-page {
-    border-bottom: 2px solid #50514f;
+  :first-child {
+    margin-left: 3rem;
   }
 
-  &.last-of-type {
-    margin-right: 0;
+  :last-child {
+    margin-right: 3rem;
+  }
+
+  &.current-page {
+    border-bottom: 2px solid #bed8d4;
   }
 `
 
@@ -27,8 +32,8 @@ const Header = () => (
       display: flex;
       justify-content: space-between;
 
-      background: #fff4e4;
-      border-bottom: 1px solid #50514f;
+      background: white;
+      margin: 15vh 0 15vh 0;
 
       * {
         margin: 0;
@@ -39,11 +44,17 @@ const Header = () => (
       Gordy 👋
     </NavLink>
     <nav>
-      <NavLink to="/" activeClassName="current-page">
-        Home
-      </NavLink>
       <NavLink to="/about" activeClassName="current-page">
         About
+      </NavLink>
+      <NavLink to="/words" activeClassName="current-page">
+        Words
+      </NavLink>
+      <NavLink to="/photos" activeClassName="current-page">
+        Photos
+      </NavLink>
+      <NavLink to="/code" activeClassName="current-page">
+        Code
       </NavLink>
     </nav>
   </header>

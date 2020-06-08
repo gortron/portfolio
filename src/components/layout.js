@@ -29,6 +29,7 @@ const Layout = ({ children }) => {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
               Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
               "Helvetica Neue", sans-serif;
+            background-color: #fffcf9;
           }
           font-size: 18px;
           line-height: 1.4;
