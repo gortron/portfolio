@@ -18,7 +18,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panic("Tried querying for Markdown, but failed!", result.errors)
   }
 
-  console.log(result.data.allMarkdownRemark.nodes)
+  // console.log(result.data.allMarkdownRemark.nodes)
   const posts = result.data.allMarkdownRemark.nodes
 
   posts.forEach(post => {
