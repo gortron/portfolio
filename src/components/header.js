@@ -14,11 +14,11 @@ const NavLink = styled(Link)`
   font-size: 20px;
 
   :first-child {
-    margin-left: 3rem;
+    margin-left: 10vw;
   }
 
   :last-child {
-    margin-right: 3rem;
+    margin-right: 10vw;
   }
 
   &.current-page {
@@ -32,8 +32,7 @@ const Header = () => (
       display: flex;
       justify-content: space-between;
 
-      background: white;
-      margin: 15vh 0 15vh 0;
+      margin: 10vh 0 10vh 0;
 
       * {
         margin: 0;

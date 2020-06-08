@@ -3,6 +3,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import PostPreview from "../components/post-preview"
+import { css } from "@emotion/core"
 
 export const query = graphql`
   {
@@ -31,10 +32,16 @@ export const query = graphql`
 const IndexPage = ({ data }) => (
   <Layout>
     <SEO title="Home" />
-    <h1>Home Page</h1>
-    {data.allMarkdownRemark.posts.map(post => (
-      <PostPreview key={post.slug} post={post} />
-    ))}
+    <div
+      css={css`
+        display: flex;
+        padding: 0 9vw 0 9vw;
+      `}
+    >
+      {data.allMarkdownRemark.posts.map(post => (
+        <PostPreview key={post.slug} post={post} />
+      ))}
+    </div>
     {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
   </Layout>
 )

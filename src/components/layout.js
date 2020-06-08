@@ -15,21 +15,13 @@ const Layout = ({ children }) => {
             margin: 0;
           }
 
-          * + * {
-            margin-top: 1rem;
-          }
-
-          > div {
-            margin-top: 0;
-          }
-
           html,
           body {
+            background-color: #fffcf9;
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
               Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
               "Helvetica Neue", sans-serif;
-            background-color: #fffcf9;
           }
           font-size: 18px;
           line-height: 1.4;
