@@ -13,6 +13,14 @@ export const query = graphql`
           date
           description
           slug
+          tags
+          image {
+            sharp: childImageSharp {
+              fluid {
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
         }
         excerpt(pruneLength: 280)
       }

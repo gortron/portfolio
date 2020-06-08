@@ -7,7 +7,7 @@ const NavLink = styled(Link)`
   font-size: 1rem;
   font-weight: ${props => props.fontWeight || "normal"};
   line-height: 1;
-  margin: 0 0.5rem 0 0;
+  margin: 0 0.75rem 0 0;
   padding: 0.25rem;
   text-decoration: none;
   color: #50514f;
