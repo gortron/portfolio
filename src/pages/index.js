@@ -35,7 +35,7 @@ const IndexPage = ({ data }) => (
       css={css`
         display: flex;
         flex-wrap: wrap;
-        padding: 5vw 5vw 5vw 5vw;
+        padding: 0 5vw 0 5vw;
       `}
     >
       {data.allMarkdownRemark.posts.map(post => (
