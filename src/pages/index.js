@@ -8,11 +8,11 @@ import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
 export const query = graphql`
   {
-    allMarkdownRemark {
+    allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
       posts: nodes {
         frontmatter {
           title
-          date
+          date(formatString: "dddd, MMMM D, YYYY-D/M/Y")
           slug
           tags
           image {

@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
 
           html,
           body {
-            background-color: #fffcf9;
+            background-color: #white;
             margin: 0;
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
               Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
@@ -25,6 +25,13 @@ const Layout = ({ children }) => {
           }
           font-size: 18px;
           line-height: 1.4;
+
+          h1 {
+            font-family: Lora;
+            font-style: regular;
+            font-weight: 400;
+            color: #e55812;
+          }
         `}
       />
       <Helmet>

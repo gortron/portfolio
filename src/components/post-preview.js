@@ -8,7 +8,7 @@ import { useBreakpoint } from "gatsby-plugin-breakpoints"
 const StyledImgDesktop = styled(Img)`
   width: 33vw;
   margin: 2vw; 2vw 0 2vw;
-  // height: 33vw;
+  height: 33vw;
   // object-fit: cover;
 `
 
@@ -16,7 +16,7 @@ const StyledTitleBox = styled.div`
   padding-right: 2vw;
   width: 37vw;
   height: 4rem;
-  color: #002626;
+  color: white;
   text-align: right;
 `
 
@@ -30,7 +30,7 @@ const Wrapper = styled.figure`
   justify-content: center;
   align-items: center;
   margin-bottom: 4vw;
-  background-color: #efe7da;
+  background-color: #efece4;
 `
 
 const WrappedImg = props => {

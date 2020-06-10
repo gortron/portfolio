@@ -11,6 +11,14 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-breakpoints`,
     {
+      resolve: "gatsby-plugin-web-font-loader",
+      options: {
+        typekit: {
+          families: ["Lora", "Nunito"],
+        },
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
