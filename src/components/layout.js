@@ -23,14 +23,21 @@ const Layout = ({ children }) => {
               Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
               "Helvetica Neue", sans-serif;
           }
-          font-size: 18px;
-          line-height: 1.4;
 
           h1 {
+             {
+              /* font-size: 8vw; */
+            }
             font-family: Lora;
             font-style: regular;
             font-weight: 400;
             color: #e55812;
+          }
+
+          p {
+            line-height: 1.4;
+            font-size: 16px;
+            padding-bottom: 1.5rem;
           }
         `}
       />

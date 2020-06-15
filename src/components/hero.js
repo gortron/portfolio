@@ -8,7 +8,8 @@ const Hero = ({ image, content }) => (
     css={css`
       background-size: cover;
       background-position: top 20% center;
-      height: 50vh;
+      height: 40vh;
+      margin: 0 10vw 0 10vw;
 
       + * {
         margin-top: 0;

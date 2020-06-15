@@ -1,6 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import { css } from "@emotion/core"
+import styled from "@emotion/styled"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
 
@@ -26,20 +27,54 @@ export const query = graphql`
   }
 `
 
+const TitleBox = styled.div`
+  padding: 3rem 10vw 0 10vw;
+  text-align: center;
+`
+
+const TitleText = styled.h1`
+  font-size: 8vw;
+  padding-bottom: 3vw;
+`
+const DateText = styled.p`
+  font-size: 12px;
+  padding-bottom: 0;
+  color: grey;
+`
+
+const ContentBox = styled.div`
+  padding: 3rem 10vw 0 10vw;
+`
+
 const PostTemplate = ({ data }) => {
-  const { title, image } = data.markdownRemark.frontmatter
+  const { title, image, tags, date } = data.markdownRemark.frontmatter
   const { html } = data.markdownRemark
+
+  let tags_string
+  if (tags) {
+    const reducer = (accumulator, currentValue) =>
+      accumulator + ", " + currentValue
+    tags_string = tags.reduce(reducer)
+  }
+
+  let date_string
+  if (date) {
+    let dates = date.split("-")
+    date_string = dates[0]
+  }
+
   return (
     <Layout>
       {image && <Hero image={image} />}
-      <div
-        css={css`
-          padding: 0 10vw 0 10vw;
-        `}
-      >
-        <h1>{title}</h1>
+      <TitleBox>
+        <TitleText>
+          <i>{title}</i>
+        </TitleText>
+        {date && <DateText>{date_string}</DateText>}
+      </TitleBox>
+      <ContentBox>
         <div dangerouslySetInnerHTML={{ __html: html }}></div>
-      </div>
+      </ContentBox>
 
       {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
     </Layout>
