@@ -10,6 +10,7 @@ module.exports = {
     `gatsby-plugin-emotion`,
     `gatsby-transformer-remark`,
     `gatsby-plugin-breakpoints`,
+    "gatsby-background-image",
     {
       resolve: "gatsby-plugin-web-font-loader",
       options: {

@@ -2,29 +2,36 @@ import React from "react"
 import { graphql } from "gatsby"
 import { css } from "@emotion/core"
 import Layout from "../components/layout"
+import Hero from "../components/hero"
 
 export const query = graphql`
   query($slug: String!) {
     markdownRemark(frontmatter: { slug: { eq: $slug } }) {
       frontmatter {
-        date(formatString: "MMMM DD, YYYY")
-        slug
         title
+        date(formatString: "dddd, MMMM D, YYYY-D/M/Y")
+        slug
+        tags
+        image {
+          sharp: childImageSharp {
+            fluid {
+              ...GatsbyImageSharpFluid_withWebp
+            }
+          }
+        }
       }
       html
-      excerpt
       rawMarkdownBody
     }
   }
 `
 
 const PostTemplate = ({ data }) => {
-  // const { title, date, description } = data.markdownRemark.frontmatter
-  // const { excerpt, html, rawMarkdownBody } = data.markdownRemark
-  const { title } = data.markdownRemark.frontmatter
+  const { title, image } = data.markdownRemark.frontmatter
   const { html } = data.markdownRemark
   return (
     <Layout>
+      {image && <Hero image={image} />}
       <div
         css={css`
           padding: 0 10vw 0 10vw;

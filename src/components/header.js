@@ -38,7 +38,7 @@ const Header = () => {
         display: flex;
         justify-content: space-between;
 
-        margin: 10vh 10vw 10vh 10vw;
+        margin: 5vh 10vw 5vh 10vw;
 
         * {
           margin: 0;
