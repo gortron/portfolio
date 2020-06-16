@@ -15,11 +15,9 @@ const StyledImgDesktop = styled(Img)`
 `
 
 const StyledTitleBox = styled.div`
-  padding-top: 2vw;
-  padding-right: 2vw;
+  padding: 2vh 10vw 2vh 10vw;
   width: 80vw;
-  height: 4rem;
-  text-align: right;
+  text-align: center;
 
   i {
     font-size: 12px;
@@ -27,12 +25,14 @@ const StyledTitleBox = styled.div`
   }
 
   h1 {
-    font-size: 8vw;
+    font-size: 6vw;
+    margin-bottom: 0;
   }
 `
 
 const StyledImgMobile = styled(Img)`
-  width: 80vw;
+  width: 60vw;
+  margin: 5vh 10vw 0 10vw;
 `
 
 const Wrapper = styled.figure`
@@ -64,8 +64,8 @@ const WrappedImg = props => {
             <StyledImgMobile fluid={fluid} alt={alt} />
           </Link>
           <StyledTitleBox>
-            {tags && <i>{tags_string}</i>}
             <h1>{title}</h1>
+            {tags && <i>{tags_string}</i>}
           </StyledTitleBox>
         </div>
       ) : (
