@@ -5,13 +5,43 @@ import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
-const StyledImgDesktop = styled(Img)`
+import BackgroundImage from "gatsby-background-image"
+
+const StyledImgDesktop = styled(BackgroundImage)`
   width: 33vw;
-  margin: 2vw; 2vw 0 2vw;
   height: 33vw;
+  margin: 2vw 2vw 2vw 2vw;
+`
+
+const Hover = styled.div`
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  transition: opacity 300ms ease;
+  -moz-transition: opacity 300ms ease;
+  -webkit-transition: opacity 300ms ease;
+
+  opacity: 0;
   &:hover {
-    background-color: grey;
+    opacity: 1;
+    background-color: #efece4;
+    transition: opacity 300ms ease;
+    -moz-transition: opacity 300ms ease;
+    -webkit-transition: opacity 300ms ease;
   }
+`
+
+const AnimatedTitle = styled.h2`
+  transform: translate3d(0, 50px, 0);
+  transition: transform 300ms ease;
+  // color: white;
+  text-align: center;
+  margin-bottom: 0;
 `
 
 const StyledTitleBox = styled.div`
@@ -69,11 +99,11 @@ const WrappedImg = props => {
           </StyledTitleBox>
         </div>
       ) : (
-        <div>
-          <Link to={slug}>
-            <StyledImgDesktop fluid={fluid} alt={alt} />
-          </Link>
-        </div>
+        <StyledImgDesktop fluid={fluid} alt={alt}>
+          <Hover>
+            <AnimatedTitle>{title}</AnimatedTitle>
+          </Hover>
+        </StyledImgDesktop>
       )}
     </Wrapper>
   )
