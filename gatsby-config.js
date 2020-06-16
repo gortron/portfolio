@@ -12,11 +12,9 @@ module.exports = {
     `gatsby-plugin-breakpoints`,
     "gatsby-background-image",
     {
-      resolve: "gatsby-plugin-web-font-loader",
+      resolve: "gatsby-plugin-typography",
       options: {
-        typekit: {
-          families: ["Lora", "Nunito"],
-        },
+        pathToConfigModule: "src/utils/typography.js",
       },
     },
     {
