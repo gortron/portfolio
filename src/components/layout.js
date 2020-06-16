@@ -35,6 +35,10 @@ const Layout = ({ children }) => {
             display: inline;
             font-size: 20px;
           }
+
+          .gatsby-highlight {
+            font-size: 14px;
+          }
         `}
       />
       <Helmet>

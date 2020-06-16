@@ -16,12 +16,7 @@ module.exports = {
       options: {
         plugins: [
           {
-            resolve: `gatsby-remark-highlight-code`,
-            options: {
-              terminal: "none",
-              theme: "oceanic-next",
-              lineNumbers: true,
-            },
+            resolve: `gatsby-remark-prismjs`,
           },
         ],
       },

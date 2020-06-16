@@ -12,4 +12,6 @@ _🎤_ Hey, is this thing _on?_
 
 ```js
 console.log("Hello world!")
+// this is another line!
+// does it number?
 ```
