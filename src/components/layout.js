@@ -21,6 +21,10 @@ const Layout = ({ children }) => {
             margin: 0;
           }
 
+          h1 {
+            font-size: 24px;
+          }
+
           blockquote {
             background: #f9f9f9;
             border-left: 10px solid black;

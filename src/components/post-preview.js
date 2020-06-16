@@ -9,15 +9,26 @@ const StyledImgDesktop = styled(Img)`
   width: 33vw;
   margin: 2vw; 2vw 0 2vw;
   height: 33vw;
-  // object-fit: cover;
+  &:hover {
+    background-color: grey;
+  }
 `
 
 const StyledTitleBox = styled.div`
+  padding-top: 2vw;
   padding-right: 2vw;
-  width: 37vw;
+  width: 80vw;
   height: 4rem;
-  color: white;
   text-align: right;
+
+  i {
+    font-size: 12px;
+    color: grey;
+  }
+
+  h1 {
+    font-size: 8vw;
+  }
 `
 
 const StyledImgMobile = styled(Img)`
@@ -31,7 +42,6 @@ const Wrapper = styled.figure`
   align-items: center;
   margin-bottom: 4vw;
   background-color: #efece4;
-  border-radius: 10px;
 `
 
 const WrappedImg = props => {
@@ -49,16 +59,20 @@ const WrappedImg = props => {
   return (
     <Wrapper>
       {breakpoints.sm ? (
-        <StyledImgMobile fluid={fluid} alt={alt} />
-      ) : (
         <div>
           <Link to={slug}>
-            <StyledImgDesktop fluid={fluid} alt={alt} />
+            <StyledImgMobile fluid={fluid} alt={alt} />
           </Link>
           <StyledTitleBox>
             {tags && <i>{tags_string}</i>}
             <h1>{title}</h1>
           </StyledTitleBox>
+        </div>
+      ) : (
+        <div>
+          <Link to={slug}>
+            <StyledImgDesktop fluid={fluid} alt={alt} />
+          </Link>
         </div>
       )}
     </Wrapper>
