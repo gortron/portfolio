@@ -9,3 +9,7 @@ image: ../images/milan_selfportrait.jpg
 ---
 
 _🎤_ Hey, is this thing _on?_
+
+```js
+console.log("Hello world!")
+```

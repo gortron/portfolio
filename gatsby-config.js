@@ -12,6 +12,21 @@ module.exports = {
     `gatsby-plugin-breakpoints`,
     "gatsby-background-image",
     {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: `gatsby-remark-highlight-code`,
+            options: {
+              terminal: "none",
+              theme: "oceanic-next",
+              lineNumbers: true,
+            },
+          },
+        ],
+      },
+    },
+    {
       resolve: "gatsby-plugin-typography",
       options: {
         pathToConfigModule: "src/utils/typography.js",

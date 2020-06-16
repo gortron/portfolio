@@ -19,17 +19,21 @@ const Layout = ({ children }) => {
           body {
             background-color: #white;
             margin: 0;
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-              Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans",
-              "Helvetica Neue", sans-serif;
           }
 
-          h1 {
-            color: #e55812;
+          blockquote {
+            background: #f9f9f9;
+            border-left: 10px solid black;
+            padding: 0.5em 10px;
+            margin: 0 0 0 0;
+            text-align: center;
+            font-style: italic;
+            font-family: Lora;
           }
 
-          p {
-            padding-bottom: 1.5rem;
+          blockquote p {
+            display: inline;
+            font-size: 20px;
           }
         `}
       />

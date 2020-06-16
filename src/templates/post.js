@@ -34,28 +34,20 @@ const TitleBox = styled.div`
 
 const TitleText = styled.h1`
   font-size: 8vw;
-  padding-bottom: 3vw;
 `
 const DateText = styled.p`
   font-size: 12px;
   padding-bottom: 0;
   color: grey;
+  padding-bottom: 1.5rem;
 `
-
 const ContentBox = styled.div`
-  padding: 3rem 10vw 0 10vw;
+  padding: 0 10vw 0 10vw;
 `
 
 const PostTemplate = ({ data }) => {
   const { title, image, tags, date } = data.markdownRemark.frontmatter
   const { html } = data.markdownRemark
-
-  let tags_string
-  if (tags) {
-    const reducer = (accumulator, currentValue) =>
-      accumulator + ", " + currentValue
-    tags_string = tags.reduce(reducer)
-  }
 
   let date_string
   if (date) {
