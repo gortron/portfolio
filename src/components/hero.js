@@ -1,6 +1,5 @@
 import React from "react"
 import { css } from "@emotion/core"
-import { styled } from "@emotion/styled"
 import BackgroundImage from "gatsby-background-image"
 
 const Hero = ({ image, content }) => (

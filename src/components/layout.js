@@ -1,7 +1,11 @@
 import React from "react"
 import { Global, css } from "@emotion/core"
 import { Helmet } from "react-helmet"
+// import { Link } from "gatsby"
+// import styled from "@emotion/styled"
+
 import Header from "./header"
+// import Menu from "react-burger-menu/lib/menus/stack"
 import useSiteMetadata from "../hooks/use-sitemetadata"
 
 const Layout = ({ children }) => {
@@ -40,8 +44,22 @@ const Layout = ({ children }) => {
             font-size: 20px;
           }
 
+          /* For prismjs */
           .gatsby-highlight {
             font-size: 14px;
+          }
+
+          /* For react-hamburger-menu */
+          .bm-burger-button {
+            position: absolute;
+            width: 36px;
+            height: 30px;
+            right: 36px;
+            top: 36px;
+          }
+
+          .bm-burger-bars {
+            background: black;
           }
         `}
       />

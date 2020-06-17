@@ -7,13 +7,13 @@ import styled from "@emotion/styled"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
 const PostPreview = ({ post }) => {
-  const { title, slug, image } = post.frontmatter
+  const { title, image } = post.frontmatter
   return <WrappedImg fluid={image.sharp.fluid} alt={title} post={post} />
 }
 
 const WrappedImg = props => {
   const { post, fluid, alt } = { ...props }
-  const { title, slug, image, tags } = post.frontmatter
+  const { title, slug, tags } = post.frontmatter
   const breakpoints = useBreakpoint()
 
   let tags_string
