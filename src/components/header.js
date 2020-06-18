@@ -79,7 +79,7 @@ const StyledMenu = styled(Menu)`
   /* Position and sizing of burger button */
   .bm-burger-button {
     position: fixed;
-    width: 36px;
+    width: 30px !important;
     height: 30px;
     left: 36px;
     top: 36px;
@@ -87,7 +87,8 @@ const StyledMenu = styled(Menu)`
 
   /* Color/shape of burger icon bars */
   .bm-burger-bars {
-    background: black;
+    background: #efece4;
+    height: 15%;
   }
 
   /* Position and sizing of clickable cross button */
@@ -134,23 +135,37 @@ const StyledMenu = styled(Menu)`
 
 const Header = () => {
   return (
-    <StyledMenu right>
-      <Link className="menu-item" to="/">
-        🏡 Home
-      </Link>
-      <Link className="menu-item" to="/about">
-        🕵🏻‍♂️ About
-      </Link>
-      <Link className="menu-item" to="/words">
-        📚 Words
-      </Link>
-      <Link className="menu-item" to="/photos">
-        📸 Photos
-      </Link>
-      <Link className="menu-item" to="/code">
-        👨🏻‍💻 Code
-      </Link>
-    </StyledMenu>
+    <header css={css``}>
+      <NavLink
+        to="/"
+        fontWeight="bold"
+        css={css`
+          position: absolute;
+          top: 5vh;
+          left: 10vw;
+          font-size: 24px;
+        `}
+      >
+        Gordy 👋
+      </NavLink>
+      <StyledMenu right>
+        <Link className="menu-item" to="/">
+          🏡 Home
+        </Link>
+        <Link className="menu-item" to="/about">
+          🕵🏻‍♂️ About
+        </Link>
+        <Link className="menu-item" to="/words">
+          📚 Words
+        </Link>
+        <Link className="menu-item" to="/photos">
+          📸 Photos
+        </Link>
+        <Link className="menu-item" to="/code">
+          👨🏻‍💻 Code
+        </Link>
+      </StyledMenu>
+    </header>
   )
 }
 

@@ -52,14 +52,19 @@ const Layout = ({ children }) => {
           /* For react-hamburger-menu */
           .bm-burger-button {
             position: absolute;
-            width: 36px;
-            height: 30px;
-            right: 36px;
-            top: 36px;
+            width: 4vh;
+            height: 24px;
+            right: 10vw;
+            top: 5vh;
           }
 
           .bm-burger-bars {
             background: black;
+            height: 3px !important;
+          }
+
+          main {
+            padding-top: 13vh;
           }
         `}
       />
