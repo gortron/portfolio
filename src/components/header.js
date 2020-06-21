@@ -15,8 +15,11 @@ const NavLink = styled(Link)`
   color: black;
   font-size: 20px;
 
+  &:hover {
+    color: grey;
+  }
+
   :first-child {
-    padding-top: 0;
     margin-left: 0;
     padding-left: 0;
   }
@@ -27,69 +30,12 @@ const NavLink = styled(Link)`
   }
 
   &.current-page {
-    border-bottom: 2px solid #bed8d4;
+    border-bottom: 2px solid #efece4;
   }
 `
 
-// const Header = () => {
-//   const breakpoints = useBreakpoint()
-//   return (
-//     <header
-//       css={css`
-//         display: flex;
-//         justify-content: space-between;
-
-//         margin: 5vh 10vw 5vh 10vw;
-
-//         * {
-//           margin: 0;
-//         }
-//       `}
-//     >
-//       <NavLink to="/" fontWeight="bold">
-//         Gordy 👋
-//       </NavLink>
-//       <nav>
-//         {breakpoints.sm ? (
-//           <NavLink to="/about" activeClassName="current-page">
-//             About
-//           </NavLink>
-//         ) : (
-//           <>
-//             <NavLink to="/about" activeClassName="current-page">
-//               About
-//             </NavLink>
-//             <NavLink to="/words" activeClassName="current-page">
-//               Words
-//             </NavLink>
-//             <NavLink to="/photos" activeClassName="current-page">
-//               Photos
-//             </NavLink>
-//             <NavLink to="/code" activeClassName="current-page">
-//               Code
-//             </NavLink>{" "}
-//           </>
-//         )}
-//       </nav>
-//     </header>
-//   )
-// }
-
-const StyledMenu = styled(Menu)`
-  /* Position and sizing of burger button */
-  .bm-burger-button {
-    position: fixed;
-    width: 30px !important;
-    height: 30px;
-    left: 36px;
-    top: 36px;
-  }
-
-  /* Color/shape of burger icon bars */
-  .bm-burger-bars {
-    background: #efece4;
-    height: 15%;
-  }
+const MobileMenu = styled(Menu)`
+  /* .bm-burger-button and .bm-burger-bars styled in layout.js */
 
   /* Position and sizing of clickable cross button */
   .bm-cross-button {
@@ -134,37 +80,69 @@ const StyledMenu = styled(Menu)`
 `
 
 const Header = () => {
+  const breakpoints = useBreakpoint()
+
   return (
-    <header css={css``}>
+    <header>
       <NavLink
         to="/"
         fontWeight="bold"
         css={css`
           position: absolute;
-          top: 5vh;
+          top: 4vh;
           left: 10vw;
-          font-size: 24px;
+          font-size: 32px;
+          font-family: Lora;
+
+          &:hover {
+            color: black;
+          }
         `}
       >
-        Gordy 👋
+        Gordy Lanza
       </NavLink>
-      <StyledMenu right>
-        <Link className="menu-item" to="/">
-          🏡 Home
-        </Link>
-        <Link className="menu-item" to="/about">
-          🕵🏻‍♂️ About
-        </Link>
-        <Link className="menu-item" to="/words">
-          📚 Words
-        </Link>
-        <Link className="menu-item" to="/photos">
-          📸 Photos
-        </Link>
-        <Link className="menu-item" to="/code">
-          👨🏻‍💻 Code
-        </Link>
-      </StyledMenu>
+      {breakpoints.sm ? (
+        <MobileMenu right>
+          <Link className="menu-item" to="/">
+            Home
+          </Link>
+          <Link className="menu-item" to="/about">
+            About
+          </Link>
+          <Link className="menu-item" to="/words">
+            Words
+          </Link>
+          <Link className="menu-item" to="/photos">
+            Photos
+          </Link>
+          <Link className="menu-item" to="/code">
+            Code
+          </Link>
+        </MobileMenu>
+      ) : (
+        <nav
+          css={css`
+            display: flex;
+            justify-content: space-between;
+            position: absolute;
+            top: 5vh;
+            right: 10vw;
+          `}
+        >
+          <NavLink to="/about" activeClassName="current-page">
+            About
+          </NavLink>
+          <NavLink to="/words" activeClassName="current-page">
+            Words
+          </NavLink>
+          <NavLink to="/photos" activeClassName="current-page">
+            Photos
+          </NavLink>
+          <NavLink to="/code" activeClassName="current-page">
+            Code
+          </NavLink>{" "}
+        </nav>
+      )}
     </header>
   )
 }

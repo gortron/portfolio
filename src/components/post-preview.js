@@ -84,7 +84,7 @@ const Hover = styled.div`
   transition: opacity 300ms ease-in-out;
 
   &:hover {
-    opacity: 0.9;
+    opacity: 0.95;
     transition: opacity 300ms ease-in-out;
   }
 

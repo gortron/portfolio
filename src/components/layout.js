@@ -50,6 +50,8 @@ const Layout = ({ children }) => {
           }
 
           /* For react-hamburger-menu */
+
+          /* Position and sizing of burger button */
           .bm-burger-button {
             position: absolute;
             width: 4vh;
@@ -58,6 +60,7 @@ const Layout = ({ children }) => {
             top: 5vh;
           }
 
+          /* Color/shape of burger icon bars */
           .bm-burger-bars {
             background: black;
             height: 3px !important;
