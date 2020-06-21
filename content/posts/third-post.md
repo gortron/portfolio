@@ -1,5 +1,5 @@
 ---
-title: Third Post
+title: A Longer Title That Might Break a Box
 date: 2020-06-04T18:39:53.637Z
 description: This is my third blog post.
 slug: third-post

@@ -1,6 +1,6 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { css } from "@emotion/core"
+// import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
@@ -46,7 +46,7 @@ const ContentBox = styled.div`
 `
 
 const PostTemplate = ({ data }) => {
-  const { title, image, tags, date } = data.markdownRemark.frontmatter
+  const { title, image, date } = data.markdownRemark.frontmatter
   const { html } = data.markdownRemark
 
   let date_string
