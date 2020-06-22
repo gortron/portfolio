@@ -12,7 +12,7 @@ collections:
     create: true
     slug: "{{slug}}"
     editor:
-      preview: true
+      preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list" }
@@ -24,10 +24,16 @@ collections:
     label: "Gallery"
     folder: "content/galleries"
     create: true
-    widget: "list"
-    summary: "{{fields.image}}"
+    slug: "{{slug}}"
+    editor:
+      preview: false
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Featured Image", name: "featured", widget: "image" }
-      - { label: "Image", name: "image", widget: "image" }
+      - label: "Gallery"
+        name: "galleryImages"
+        widget: "list"
+        summary: "{{fields.image}}"
+        field:
+          - { label: Image, name: image, widget: image }
