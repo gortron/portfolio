@@ -19,3 +19,10 @@ collections:
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
       - { label: "Body", name: "body", widget: "markdown" }
+
+collections:
+  - name: "gallery"
+    label: "Gallery"
+    widget: "list"
+    summary: '{{fields.image}}'
+    field: {label: Image, name: image, widget: image}
