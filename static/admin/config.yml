@@ -21,6 +21,8 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
   - name: "gallery"
     label: "Gallery"
+    folder: "content/galleries"
     widget: "list"
     summary: "{{fields.image}}"
-    field: { label: Image, name: image, widget: image }
+    fields:
+      - { label: Image, name: image, widget: image }
