@@ -10,10 +10,7 @@ collections:
     label: "Post"
     folder: "content/posts"
     create: true
-    slug:
-      encoding: "ascii"
-      clean_accents: true
-      sanitize_replacement: "-"
+    slug: "{{slug}}"
     editor:
       preview: false
     fields:
