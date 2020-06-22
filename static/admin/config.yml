@@ -29,5 +29,5 @@ collections:
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list" }
-      - { label: "Featured Image", name: "image", widget: "image" }
-      - { label: Image, name: image, widget: image }
+      - { label: "Featured Image", name: "featured", widget: "image" }
+      - { label: "Image", name: "image", widget: "image" }
