@@ -23,7 +23,13 @@ const usePosts = () => {
       }
     }
   `)
-  return data.allMarkdownRemark.posts
+
+  // Remove the single "about" post
+  const relevantPosts = data.allMarkdownRemark.posts.filter(
+    post => !post.frontmatter.tags.includes("about")
+  )
+
+  return relevantPosts
 }
 
 export default usePosts

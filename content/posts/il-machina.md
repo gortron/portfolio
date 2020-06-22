@@ -1,5 +1,5 @@
 ---
-title: IL MACHINA
+title: Il Machina
 tags:
   - writing
 image: ../images/suleiman.jpg

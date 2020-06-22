@@ -1,6 +1,6 @@
 ---
 title: I'm Gordy
-date: 2020-06-04T18:39:53.637Z
+date: 2015-06-04T18:39:53.637Z
 description: A brief overview of my self.
 slug: about
 tags:
