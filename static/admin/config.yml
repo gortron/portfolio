@@ -31,8 +31,8 @@ collections:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Featured Image", name: "featured", widget: "image" }
-      - label: "Gallery"
-        name: "galleryImages"
+      - label: "Images"
+        name: "images"
         widget: "list"
         summary: "{{fields.image}}"
         field: { label: Image, name: image, widget: image }
