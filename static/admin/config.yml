@@ -18,7 +18,7 @@ collections:
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Body", name: "body", widget: "markdown"}
+      - { label: "Body", name: "body", widget: "markdown" }
   - name: "gallery"
     label: "Gallery"
     folder: "content/galleries"
@@ -31,8 +31,8 @@ collections:
       - { label: "Tags", name: "tags", widget: "list" }
       - { label: "Featured Image", name: "image", widget: "image" }
       - { label: "Publish Date", name: "date", widget: "datetime" }
-    - label: "Gallery Images"
-      name: "galleryImages"
-      widget: "list"
-      summary: "{{fields.image}}"
-      field: { label: Image, name: image, widget: image }
+      - label: "Gallery Images"
+        name: "galleryImages"
+        widget: "list"
+        summary: "{{fields.image}}"
+        field: { label: Image, name: image, widget: image }
