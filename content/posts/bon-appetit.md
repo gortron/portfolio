@@ -1,13 +1,13 @@
 ---
-title: "Bon Appetit: a facial detection game (JS/Rails/Postgres)"
+title: "Bon Appetit"
 tags:
   - coding
-image: /images/bonappetit.jpeg
+slug: bon-appetit
+image: ../images/bonappetit.jpeg
 date: 2020-06-22T18:45:51.261Z
 ---
+
 [Bon APPetit](http://www.bonappetit.dev) is a facial detection game built by Gordy Lanza and Jules Blanc. We built it with vanilla ES6, Rails, and face-api.js.
-
-
 
 ## Motivation
 
@@ -19,11 +19,11 @@ Lastly, we wanted to explore ways in which an application is an extension of the
 
 ## Stack
 
-* Rails/Postgres for back-end
-* ES6 for front-end
-* [face-api.js](https://github.com/justadudewhohacks/face-api.js/) package for facial detection
+- Rails/Postgres for back-end
+- ES6 for front-end
+- [face-api.js](https://github.com/justadudewhohacks/face-api.js/) package for facial detection
 
 ## Comments
 
-* Huge thanks to the brilliant work of [Vincent Muehler](https://github.com/justadudewhohacks) on his [face-api.js](https://github.com/justadudewhohacks/face-api.js/). We could not have built this in 4 days without his library.
-* We were hard-pressed to build and deploy our first ES6 app in a week. Known issues we did not have time to resolve are logged in the repo.
+- Huge thanks to the brilliant work of [Vincent Muehler](https://github.com/justadudewhohacks) on his [face-api.js](https://github.com/justadudewhohacks/face-api.js/). We could not have built this in 4 days without his library.
+- We were hard-pressed to build and deploy our first ES6 app in a week. Known issues we did not have time to resolve are logged in the repo.

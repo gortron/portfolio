@@ -1,13 +1,12 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const result = await graphql(`
     {
-      allMarkdownRemark {
+      allFile(filter: { sourceInstanceName: { eq: "posts" } }) {
         nodes {
-          frontmatter {
-            title
-            date
-            description
-            slug
+          childMarkdownRemark {
+            frontmatter {
+              slug
+            }
           }
         }
       }
@@ -18,16 +17,16 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     reporter.panic("Tried querying for Markdown, but failed!", result.errors)
   }
 
-  // console.log(result.data.allMarkdownRemark.nodes)
-  const posts = result.data.allMarkdownRemark.nodes
+  // console.log(result.data.allFile.nodes)
+  const posts = result.data.allFile.nodes
 
   posts.forEach(post => {
-    // console.log(post.node.frontmatter)
+    // console.log(post.childMarkdownRemark.frontmatter.slug)
     actions.createPage({
-      path: post.frontmatter.slug,
+      path: post.childMarkdownRemark.frontmatter.slug,
       component: require.resolve("./src/templates/post.js"),
       context: {
-        slug: post.frontmatter.slug,
+        slug: post.childMarkdownRemark.frontmatter.slug,
       },
     })
   })
