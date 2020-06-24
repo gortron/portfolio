@@ -5,7 +5,7 @@ import DisplayPosts from "../components/display-posts"
 const PhotosShowcase = () => {
   const allPosts = usePosts()
   const relevantPosts = allPosts.filter(post =>
-    post.frontmatter.tags.includes("photography")
+    post.childMarkdownRemark.frontmatter.tags.includes("photography")
   )
   return <DisplayPosts posts={relevantPosts} />
   // return <pre>{JSON.stringify(data, null, 2)}</pre>

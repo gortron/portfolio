@@ -3,30 +3,38 @@ import { graphql, useStaticQuery } from "gatsby"
 const usePosts = () => {
   const data = useStaticQuery(graphql`
     {
-      allMarkdownRemark(sort: { fields: [frontmatter___date], order: DESC }) {
+      allFile(
+        filter: { sourceInstanceName: { eq: "posts" } }
+        sort: {
+          fields: [childMarkdownRemark___frontmatter___date]
+          order: DESC
+        }
+      ) {
         posts: nodes {
-          frontmatter {
-            title
-            date(formatString: "dddd, MMMM D, YYYY-D/M/Y")
-            slug
-            tags
-            image {
-              sharp: childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid_withWebp
+          childMarkdownRemark {
+            frontmatter {
+              title
+              date(formatString: "dddd, MMMM D, YYYY-D/M/Y")
+              slug
+              tags
+              image {
+                sharp: childImageSharp {
+                  fluid {
+                    ...GatsbyImageSharpFluid_withWebp
+                  }
                 }
               }
             }
+            excerpt(pruneLength: 280)
           }
-          excerpt(pruneLength: 280)
         }
       }
     }
   `)
 
   // Remove the single "about" post
-  const relevantPosts = data.allMarkdownRemark.posts.filter(
-    post => !post.frontmatter.tags.includes("about")
+  const relevantPosts = data.allFile.posts.filter(
+    post => !post.childMarkdownRemark.frontmatter.tags.includes("about")
   )
 
   return relevantPosts

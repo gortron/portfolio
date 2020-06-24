@@ -5,7 +5,7 @@ import DisplayPosts from "../components/display-posts"
 const WritingShowcase = () => {
   const allPosts = usePosts()
   const relevantPosts = allPosts.filter(post =>
-    post.frontmatter.tags.includes("writing")
+    post.childMarkdownRemark.frontmatter.tags.includes("writing")
   )
   return <DisplayPosts posts={relevantPosts} />
   // return <pre>{JSON.stringify(data, null, 2)}</pre>
