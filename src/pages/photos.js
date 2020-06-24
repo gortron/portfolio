@@ -1,14 +1,14 @@
 import React from "react"
-import usePosts from "../hooks/use-posts"
+import useGalleries from "../hooks/use-galleries"
 import DisplayPosts from "../components/display-posts"
 
 const PhotosShowcase = () => {
-  const allPosts = usePosts()
-  const relevantPosts = allPosts.filter(post =>
-    post.childMarkdownRemark.frontmatter.tags.includes("photography")
-  )
-  return <DisplayPosts posts={relevantPosts} />
-  // return <pre>{JSON.stringify(data, null, 2)}</pre>
+  const allGalleries = useGalleries()
+  // const relevantPosts = allPosts.filter(post =>
+  //   post.childMarkdownRemark.frontmatter.tags.includes("photography")
+  // )
+  // return <DisplayPosts posts={allGalleries} />
+  return <pre>{JSON.stringify(allGalleries, null, 2)}</pre>
 }
 
 export default PhotosShowcase
