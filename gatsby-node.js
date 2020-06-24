@@ -1,5 +1,5 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
-  const result = await graphql(`
+  const postsResult = await graphql(`
     {
       allFile(filter: { sourceInstanceName: { eq: "posts" } }) {
         nodes {
@@ -13,15 +13,16 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   `)
 
-  if (result.errors) {
-    reporter.panic("Tried querying for Markdown, but failed!", result.errors)
+  if (postsResult.errors) {
+    reporter.panic(
+      "Tried querying for posts Markdown, but failed!",
+      postsResult.errors
+    )
   }
 
-  // console.log(result.data.allFile.nodes)
-  const posts = result.data.allFile.nodes
+  const posts = postsResult.data.allFile.nodes
 
   posts.forEach(post => {
-    // console.log(post.childMarkdownRemark.frontmatter.slug)
     actions.createPage({
       path: post.childMarkdownRemark.frontmatter.slug,
       component: require.resolve("./src/templates/post.js"),
@@ -30,13 +31,46 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     })
   })
+
+  const galleriesResult = await graphql(`
+    {
+      allFile(filter: { sourceInstanceName: { eq: "galleries" } }) {
+        nodes {
+          childMarkdownRemark {
+            frontmatter {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  if (galleriesResult.errors) {
+    reporter.panic(
+      "Tried querying for galleries Markdown, but failed!",
+      galleriesResult.errors
+    )
+  }
+
+  const galleries = galleriesResult.data.allFile.nodes
+
+  galleries.forEach(gallery => {
+    actions.createPage({
+      path: gallery.childMarkdownRemark.frontmatter.slug,
+      component: require.resolve("./src/templates/gallery.js"),
+      context: {
+        slug: gallery.childMarkdownRemark.frontmatter.slug,
+      },
+    })
+  })
 }
 
 const returnFirstTruthy = (arr, cb) => {
   if (!arr) return null
   for (const item of arr) {
-    const result = cb(item)
-    if (result) return result
+    const postsResult = cb(item)
+    if (postsResult) return postsResult
   }
 }
 
