@@ -27,6 +27,7 @@ const useGalleries = () => {
               galleryImages {
                 sharp: childImageSharp {
                   fluid {
+                    aspectRatio
                     ...GatsbyImageSharpFluid_withWebp
                   }
                 }

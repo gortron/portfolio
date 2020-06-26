@@ -1,9 +1,10 @@
 import React from "react"
 import { graphql } from "gatsby"
-// import { css } from "@emotion/core"
-import styled from "@emotion/styled"
+import { css } from "@emotion/core"
 import Layout from "../components/layout"
-import Hero from "../components/hero"
+import { chunk, sum, uniqueId } from "lodash"
+import Img from "gatsby-image"
+import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
 export const query = graphql`
   query($slug: String!) {
@@ -23,6 +24,7 @@ export const query = graphql`
         galleryImages {
           sharp: childImageSharp {
             fluid {
+              aspectRatio
               ...GatsbyImageSharpFluid_withWebp
             }
           }
@@ -32,48 +34,43 @@ export const query = graphql`
   }
 `
 
-const TitleBox = styled.div`
-  padding: 3rem 10vw 0 10vw;
-  text-align: center;
-`
-
-const TitleText = styled.h1`
-  font-size: 8vw;
-`
-const DateText = styled.p`
-  font-size: 12px;
-  padding-bottom: 0;
-  color: grey;
-  padding-bottom: 1.5rem;
-`
-const ContentBox = styled.div`
-  padding: 0 10vw 0 10vw;
-`
-
 const GalleryTemplate = ({ data }) => {
-  const { title, image, date } = data.markdownRemark.frontmatter
-  const { html } = data.markdownRemark
+  const { galleryImages } = data.markdownRemark.frontmatter
+  const breakpoints = useBreakpoint()
+  const itemsPerRow = breakpoints.sm ? 1 : 3
+  const rows = chunk(galleryImages, itemsPerRow)
 
-  let date_string
-  if (date) {
-    let dates = date.split("-")
-    date_string = dates[0]
-  }
-
+  // return <pre>{JSON.stringify(rows, null, 2)}</pre>
   return (
     <Layout>
-      {image && <Hero image={image} />}
-      <TitleBox>
-        <TitleText>
-          <i>{title}</i>
-        </TitleText>
-        {date && <DateText>{date_string}</DateText>}
-      </TitleBox>
-      <ContentBox>
-        <div dangerouslySetInnerHTML={{ __html: html }}></div>
-      </ContentBox>
+      <div
+        css={css`
+          margin: 0 10vw 0 10vw;
 
-      {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
+          img {
+            border-left: 4px solid white;
+            border-right: 4px solid white;
+          }
+        `}
+      >
+        {rows.map(row => {
+          const rowAspectRatioSum = sum(
+            row.map(image => image.sharp.fluid.aspectRatio)
+          )
+
+          return row.map(image => (
+            <Img
+              key={uniqueId()}
+              fluid={image.sharp.fluid}
+              css={css`
+                width: ${(image.sharp.fluid.aspectRatio / rowAspectRatioSum) *
+                100}%;
+                display: inline-block;
+              `}
+            />
+          ))
+        })}
+      </div>
     </Layout>
   )
 }
