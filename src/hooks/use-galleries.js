@@ -1,16 +1,16 @@
 import { graphql, useStaticQuery } from "gatsby"
 
-const usePosts = () => {
+const useGalleries = () => {
   const data = useStaticQuery(graphql`
     {
       allFile(
-        filter: { sourceInstanceName: { eq: "posts" } }
+        filter: { sourceInstanceName: { eq: "galleries" } }
         sort: {
           fields: [childMarkdownRemark___frontmatter___date]
           order: DESC
         }
       ) {
-        posts: nodes {
+        galleries: nodes {
           childMarkdownRemark {
             frontmatter {
               title
@@ -24,20 +24,22 @@ const usePosts = () => {
                   }
                 }
               }
+              galleryImages {
+                sharp: childImageSharp {
+                  fluid {
+                    aspectRatio
+                    ...GatsbyImageSharpFluid_withWebp
+                  }
+                }
+              }
             }
-            excerpt(pruneLength: 280)
           }
         }
       }
     }
   `)
 
-  // Remove the single "about" post
-  const relevantPosts = data.allFile.posts.filter(
-    post => !post.childMarkdownRemark.frontmatter.tags.includes("about")
-  )
-
-  return relevantPosts
+  return data.allFile.galleries
 }
 
-export default usePosts
+export default useGalleries

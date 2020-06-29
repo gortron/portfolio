@@ -17,7 +17,7 @@ const DisplayPosts = ({ posts }) => (
       `}
     >
       {posts.map(post => (
-        <PostPreview key={post.slug} post={post} />
+        <PostPreview key={post.slug} post={post.childMarkdownRemark} />
       ))}
     </div>
     {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}

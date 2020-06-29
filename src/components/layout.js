@@ -65,6 +65,10 @@ const Layout = ({ children }) => {
           main {
             padding-top: 13vh;
           }
+
+          .srlImage {
+            width: 100vw !important;
+          }
         `}
       />
       <Helmet>

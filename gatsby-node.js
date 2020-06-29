@@ -1,5 +1,5 @@
 exports.createPages = async ({ actions, graphql, reporter }) => {
-  const result = await graphql(`
+  const postsResult = await graphql(`
     {
       allFile(filter: { sourceInstanceName: { eq: "posts" } }) {
         nodes {
@@ -13,15 +13,16 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     }
   `)
 
-  if (result.errors) {
-    reporter.panic("Tried querying for Markdown, but failed!", result.errors)
+  if (postsResult.errors) {
+    reporter.panic(
+      "Tried querying for posts Markdown, but failed!",
+      postsResult.errors
+    )
   }
 
-  // console.log(result.data.allFile.nodes)
-  const posts = result.data.allFile.nodes
+  const posts = postsResult.data.allFile.nodes
 
   posts.forEach(post => {
-    // console.log(post.childMarkdownRemark.frontmatter.slug)
     actions.createPage({
       path: post.childMarkdownRemark.frontmatter.slug,
       component: require.resolve("./src/templates/post.js"),
@@ -30,4 +31,104 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       },
     })
   })
+
+  const galleriesResult = await graphql(`
+    {
+      allFile(filter: { sourceInstanceName: { eq: "galleries" } }) {
+        nodes {
+          childMarkdownRemark {
+            frontmatter {
+              slug
+            }
+          }
+        }
+      }
+    }
+  `)
+
+  if (galleriesResult.errors) {
+    reporter.panic(
+      "Tried querying for galleries Markdown, but failed!",
+      galleriesResult.errors
+    )
+  }
+
+  const galleries = galleriesResult.data.allFile.nodes
+
+  galleries.forEach(gallery => {
+    actions.createPage({
+      path: gallery.childMarkdownRemark.frontmatter.slug,
+      component: require.resolve("./src/templates/gallery.js"),
+      context: {
+        slug: gallery.childMarkdownRemark.frontmatter.slug,
+      },
+    })
+  })
+}
+
+const returnFirstTruthy = (arr, cb) => {
+  if (!arr) return null
+  for (const item of arr) {
+    const postsResult = cb(item)
+    if (postsResult) return postsResult
+  }
+}
+
+exports.createSchemaCustomization = ({ actions: { createTypes }, schema }) => {
+  createTypes(
+    schema.buildObjectType({
+      name: "MarkdownRemarkFrontmatter",
+      fields: {
+        images: {
+          type: `[ImageSharp]`,
+          resolve: async (source, args, context, info) => {
+            // Get the original contents of the frontmatter filename array
+            const originalArray = context.defaultFieldResolver(
+              source,
+              args,
+              context,
+              info
+            )
+            // If there's no original contents, bail out early
+            if (!originalArray) return null
+            if (originalArray.length === 0) return []
+
+            // Try running the query for files matching the provided names
+            const query = await context.nodeModel.runQuery({
+              query: {
+                filter: {
+                  sourceInstanceName: { eq: "assets" },
+                  relativePath: { in: originalArray },
+                },
+              },
+              type: "File",
+            })
+
+            if (query) {
+              // Map resolved nodes to their filenames so we can return them in original order
+              const filenameSharpMap = {}
+
+              for (const fileNode of query) {
+                const imageSharpNode = returnFirstTruthy(
+                  fileNode.children,
+                  id =>
+                    context.nodeModel.getNodeById({
+                      id,
+                      type: "ImageSharp",
+                    })
+                )
+                if (imageSharpNode) {
+                  filenameSharpMap[fileNode.relativePath] = imageSharpNode
+                }
+              }
+
+              return originalArray.map(filename => filenameSharpMap[filename])
+            } else {
+              return null
+            }
+          },
+        },
+      },
+    })
+  )
 }
