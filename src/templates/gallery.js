@@ -2,9 +2,12 @@ import React from "react"
 import { graphql } from "gatsby"
 import { css } from "@emotion/core"
 import Layout from "../components/layout"
-import { chunk, sum, uniqueId } from "lodash"
+import { chunk, sum } from "lodash"
 import Img from "gatsby-image"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
+import SimpleReactLightbox from "simple-react-lightbox"
+import { SRLWrapper } from "simple-react-lightbox"
+import options from "../utils/lightbox-config"
 
 export const query = graphql`
   query($slug: String!) {
@@ -53,23 +56,32 @@ const GalleryTemplate = ({ data }) => {
           }
         `}
       >
-        {rows.map(row => {
-          const rowAspectRatioSum = sum(
-            row.map(image => image.sharp.fluid.aspectRatio)
-          )
-
-          return row.map(image => (
-            <Img
-              key={uniqueId()}
-              fluid={image.sharp.fluid}
-              css={css`
-                width: ${(image.sharp.fluid.aspectRatio / rowAspectRatioSum) *
-                100}%;
-                display: inline-block;
-              `}
-            />
-          ))
-        })}
+        <SimpleReactLightbox>
+          <SRLWrapper options={options}>
+            {rows.map(row => {
+              const rowAspectRatioSum = sum(
+                row.map(image => image.sharp.fluid.aspectRatio)
+              )
+              return row.map(image => {
+                const splitPath = image.sharp.fluid.src.split("/")
+                const title = splitPath[splitPath.length - 1]
+                return (
+                  <Img
+                    key={title}
+                    alt={title}
+                    fluid={image.sharp.fluid}
+                    css={css`
+                      width: ${(image.sharp.fluid.aspectRatio /
+                        rowAspectRatioSum) *
+                      100}%;
+                      display: inline-block;
+                    `}
+                  />
+                )
+              })
+            })}
+          </SRLWrapper>
+        </SimpleReactLightbox>
       </div>
     </Layout>
   )
