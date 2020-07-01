@@ -2,7 +2,7 @@ import React from "react"
 import { css } from "@emotion/core"
 import BackgroundImage from "gatsby-background-image"
 
-const Hero = ({ image, content }) => (
+const Hero = ({ image }) => (
   <BackgroundImage
     css={css`
       background-size: cover;
@@ -15,9 +15,7 @@ const Hero = ({ image, content }) => (
       }
     `}
     fluid={image.sharp.fluid}
-  >
-    {content}
-  </BackgroundImage>
+  ></BackgroundImage>
 )
 
 export default Hero

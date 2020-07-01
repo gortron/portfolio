@@ -13,7 +13,8 @@ const PostPreview = ({ post }) => {
 
 const WrappedImg = props => {
   const { post, fluid, alt } = { ...props }
-  const { title, slug, tags } = post.frontmatter
+  const { title, tags } = post.frontmatter
+  const { slug } = post.fields
   const breakpoints = useBreakpoint()
 
   let tags_string

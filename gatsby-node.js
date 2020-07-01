@@ -1,10 +1,12 @@
+const { createFilePath } = require(`gatsby-source-filesystem`)
+
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const postsResult = await graphql(`
     {
       allFile(filter: { sourceInstanceName: { eq: "posts" } }) {
         nodes {
           childMarkdownRemark {
-            frontmatter {
+            fields {
               slug
             }
           }
@@ -23,11 +25,13 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const posts = postsResult.data.allFile.nodes
 
   posts.forEach(post => {
+    console.log(post.childMarkdownRemark.fields)
     actions.createPage({
-      path: post.childMarkdownRemark.frontmatter.slug,
+      path: post.childMarkdownRemark.fields.slug,
       component: require.resolve("./src/templates/post.js"),
       context: {
-        slug: post.childMarkdownRemark.frontmatter.slug,
+        slug: post.childMarkdownRemark.fields.slug,
+        id: post.childMarkdownRemark.id,
       },
     })
   })
@@ -37,7 +41,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       allFile(filter: { sourceInstanceName: { eq: "galleries" } }) {
         nodes {
           childMarkdownRemark {
-            frontmatter {
+            fields {
               slug
             }
           }
@@ -57,10 +61,10 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
 
   galleries.forEach(gallery => {
     actions.createPage({
-      path: gallery.childMarkdownRemark.frontmatter.slug,
+      path: gallery.childMarkdownRemark.fields.slug,
       component: require.resolve("./src/templates/gallery.js"),
       context: {
-        slug: gallery.childMarkdownRemark.frontmatter.slug,
+        slug: gallery.childMarkdownRemark.fields.slug,
       },
     })
   })
@@ -74,6 +78,21 @@ const returnFirstTruthy = (arr, cb) => {
   }
 }
 
+// This is used to conver the file name to a slug
+exports.onCreateNode = ({ node, actions, getNode }) => {
+  const { createNodeField } = actions
+
+  if (node.internal.type === `MarkdownRemark`) {
+    const slug = createFilePath({ node, getNode })
+    createNodeField({
+      node,
+      name: `slug`,
+      value: slug,
+    })
+  }
+}
+
+// This is used for the gallery component's list of images
 exports.createSchemaCustomization = ({ actions: { createTypes }, schema }) => {
   createTypes(
     schema.buildObjectType({

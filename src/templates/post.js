@@ -7,11 +7,13 @@ import Hero from "../components/hero"
 
 export const query = graphql`
   query($slug: String!) {
-    markdownRemark(frontmatter: { slug: { eq: $slug } }) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
+      fields {
+        slug
+      }
       frontmatter {
         title
         date(formatString: "dddd, MMMM D, YYYY-D/M/Y")
-        slug
         tags
         image {
           sharp: childImageSharp {

@@ -12,10 +12,12 @@ const usePosts = () => {
       ) {
         posts: nodes {
           childMarkdownRemark {
+            fields {
+              slug
+            }
             frontmatter {
               title
               date(formatString: "dddd, MMMM D, YYYY-D/M/Y")
-              slug
               tags
               image {
                 sharp: childImageSharp {
