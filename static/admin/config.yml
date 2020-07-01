@@ -16,7 +16,7 @@ collections:
     label: "Post"
     folder: "content/posts"
     create: true
-    slug: "{{fields.title}}"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     editor:
       preview: false
     fields:
