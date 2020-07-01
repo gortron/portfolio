@@ -10,7 +10,7 @@ collections:
     label: "Post"
     folder: "content/posts"
     create: true
-    slug: "{{slug}}"
+    slug: "{{fields.title}}"
     editor:
       preview: false
     fields:
