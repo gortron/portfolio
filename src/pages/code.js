@@ -7,7 +7,7 @@ const CodingShowcase = () => {
   const relevantPosts = allPosts.filter(post =>
     post.childMarkdownRemark.frontmatter.tags.includes("coding")
   )
-  return <DisplayPosts posts={relevantPosts} />
+  return <DisplayPosts content={relevantPosts} />
   // return <pre>{JSON.stringify(data, null, 2)}</pre>
 }
 

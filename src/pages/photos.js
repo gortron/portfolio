@@ -4,7 +4,7 @@ import DisplayPosts from "../components/display-posts"
 
 const PhotosShowcase = () => {
   const allGalleries = useGalleries()
-  return <DisplayPosts posts={allGalleries} />
+  return <DisplayPosts content={allGalleries} />
   // return <pre>{JSON.stringify(allGalleries, null, 2)}</pre>
 }
 
