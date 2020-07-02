@@ -25,7 +25,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   const posts = postsResult.data.allFile.nodes
 
   posts.forEach(post => {
-    console.log(post.childMarkdownRemark.fields)
     actions.createPage({
       path: post.childMarkdownRemark.fields.slug,
       component: require.resolve("./src/templates/post.js"),

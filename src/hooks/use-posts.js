@@ -10,7 +10,7 @@ const usePosts = () => {
           order: DESC
         }
       ) {
-        posts: nodes {
+        nodes {
           childMarkdownRemark {
             fields {
               slug
@@ -21,7 +21,8 @@ const usePosts = () => {
               tags
               image {
                 sharp: childImageSharp {
-                  fluid {
+                  fluid(quality: 100) {
+                    aspectRatio
                     ...GatsbyImageSharpFluid_withWebp
                   }
                 }
@@ -35,7 +36,7 @@ const usePosts = () => {
   `)
 
   // Remove the single "about" post
-  const relevantPosts = data.allFile.posts.filter(
+  const relevantPosts = data.allFile.nodes.filter(
     post => !post.childMarkdownRemark.frontmatter.tags.includes("about")
   )
 

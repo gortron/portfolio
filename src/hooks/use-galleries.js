@@ -10,7 +10,7 @@ const useGalleries = () => {
           order: DESC
         }
       ) {
-        galleries: nodes {
+        nodes {
           childMarkdownRemark {
             fields {
               slug
@@ -41,7 +41,7 @@ const useGalleries = () => {
     }
   `)
 
-  return data.allFile.galleries
+  return data.allFile.nodes
 }
 
 export default useGalleries

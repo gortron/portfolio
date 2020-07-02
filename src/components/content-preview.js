@@ -1,20 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
 import Img from "gatsby-image"
-import BackgroundImage from "gatsby-background-image"
 import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
-const PostPreview = ({ post }) => {
-  const { title, image } = post.frontmatter
-  return <WrappedImg fluid={image.sharp.fluid} alt={title} post={post} />
-}
-
-const WrappedImg = props => {
-  const { post, fluid, alt } = { ...props }
-  const { title, tags } = post.frontmatter
-  const { slug } = post.fields
+const ContentPreview = ({ content }) => {
+  const { title, image, tags } = content.frontmatter
   const breakpoints = useBreakpoint()
 
   let tags_string
@@ -25,53 +17,70 @@ const WrappedImg = props => {
   }
 
   return (
-    <Wrapper>
+    <>
       {breakpoints.sm ? (
-        <div>
-          <Link to={slug}>
-            <StyledImgMobile fluid={fluid} alt={alt} />
-          </Link>
+        <MobileWrapper>
           <StyledTitleBox>
             <h1>{title}</h1>
             {tags && <i>{tags_string}</i>}
           </StyledTitleBox>
-        </div>
+          <Link to={content.fields.slug}>
+            <StyledImgMobile fluid={image.sharp.fluid} alt={title} />
+          </Link>
+        </MobileWrapper>
       ) : (
-        <Link
-          to={slug}
+        <div
           css={css`
-            text-decoration: inherit;
-            color: inherit;
+            position: relative;
+            text-decoration: none;
+            img {
+              border: 6px solid white;
+            }
           `}
         >
-          <StyledImgDesktop fluid={fluid} alt={alt}>
+          <Link
+            to={content.fields.slug}
+            css={css`
+              text-decoration: inherit;
+              color: inherit;
+            `}
+          >
+            <Img
+              alt={title}
+              fluid={image.sharp.fluid}
+              css={css`
+                display: block;
+                width: 100%;
+                height: auto;
+              `}
+            />
             <Hover>
               <AnimatedTitle>{title}</AnimatedTitle>
               {tags && <AnimatedParagraph>{tags_string}</AnimatedParagraph>}
             </Hover>
-          </StyledImgDesktop>
-        </Link>
+          </Link>
+        </div>
       )}
-    </Wrapper>
+    </>
   )
 }
 
-const Wrapper = styled.figure`
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 4vw;
+const MobileWrapper = styled.div`
+  padding-bottom: 5px;
+  margin-bottom: 20px;
   background-color: #efece4;
-`
-// Styling and Animation for Desktop
-const StyledImgDesktop = styled(BackgroundImage)`
-  width: 33vw;
-  height: 33vw;
-  margin: 2vw 2vw 2vw 2vw;
+  text-align: center;
+  img {
+    margin-bottom: 0;
+  }
 `
 
 const Hover = styled.div`
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   height: 100%;
   width: 100%;
 
@@ -80,6 +89,7 @@ const Hover = styled.div`
   align-items: center;
   justify-content: center;
 
+  border: 6px solid white;
   background-color: #efece4;
   opacity: 0;
   transition: opacity 300ms ease-in-out;
@@ -111,11 +121,11 @@ const AnimatedParagraph = styled.p`
 // Styling for Mobile
 const StyledImgMobile = styled(Img)`
   width: 60vw;
-  margin: 5vh 10vw 0 10vw;
+  margin: 5px 10vw 20px 10vw;
 `
 
 const StyledTitleBox = styled.div`
-  padding: 2vh 10vw 2vh 10vw;
+  padding: 10px 10vw 0 10vw;
   width: 80vw;
   text-align: center;
 
@@ -129,4 +139,4 @@ const StyledTitleBox = styled.div`
     margin-bottom: 0;
   }
 `
-export default PostPreview
+export default ContentPreview

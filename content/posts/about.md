@@ -5,7 +5,7 @@ description: A brief overview of my self.
 slug: about
 tags:
   - about
-image: ../images/milan_selfportrait.jpg
+image: ../images/self-portrait.JPG
 ---
 
 # I create things for the web, write missives, and take photos.
