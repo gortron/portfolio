@@ -5,7 +5,7 @@ import { css } from "@emotion/core"
 import styled from "@emotion/styled"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
-const PostPreview = ({ content }) => {
+const ContentPreview = ({ content }) => {
   const { title, image, tags } = content.frontmatter
   const breakpoints = useBreakpoint()
 
@@ -139,4 +139,4 @@ const StyledTitleBox = styled.div`
     margin-bottom: 0;
   }
 `
-export default PostPreview
+export default ContentPreview

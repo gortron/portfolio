@@ -1,36 +1,12 @@
 import React from "react"
-import SEO from "../components/seo"
-import Layout from "../components/layout"
-import PostPreview from "../components/post-preview"
+import SEO from "./seo"
+import Layout from "./layout"
+import ContentPreview from "./content-preview"
 import { css } from "@emotion/core"
-import Img from "gatsby-image"
-
-import SimpleReactLightbox from "simple-react-lightbox"
-import { SRLWrapper } from "simple-react-lightbox"
 import { chunk, sum } from "lodash"
 import { useBreakpoint } from "gatsby-plugin-breakpoints"
 
-// const DisplayPosts = ({ posts }) => (
-//   <Layout>
-//     <SEO title="Home" />
-//     <div
-//       css={css`
-//         display: flex;
-//         flex-wrap: wrap;
-//         justify-content: space-between;
-//         align-content: stretch;
-//         margin: 0 10vw 0 10vw;
-//       `}
-//     >
-//       {posts.map(post => (
-//         <PostPreview key={post.slug} post={post.childMarkdownRemark} />
-//       ))}
-//     </div>
-//     {/* <pre>{JSON.stringify(data, null, 2)}</pre> */}
-//   </Layout>
-// )
-
-const DisplayPosts = ({ content }) => {
+const DisplayContent = ({ content }) => {
   const breakpoints = useBreakpoint()
   const itemsPerRow = breakpoints.sm ? 1 : 2
   const rows = chunk(content, itemsPerRow)
@@ -66,7 +42,7 @@ const DisplayPosts = ({ content }) => {
                   display: inline-block;
                 `}
               >
-                <PostPreview
+                <ContentPreview
                   key={content.childMarkdownRemark.fields.slug}
                   content={content.childMarkdownRemark}
                 />
@@ -79,4 +55,4 @@ const DisplayPosts = ({ content }) => {
   )
 }
 
-export default DisplayPosts
+export default DisplayContent
