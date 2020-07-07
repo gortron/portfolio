@@ -1,3 +1,4 @@
+const { get, uniq, kebabCase } = require("lodash")
 const { createFilePath } = require(`gatsby-source-filesystem`)
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
@@ -8,6 +9,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           childMarkdownRemark {
             fields {
               slug
+            }
+            frontmatter {
+              tags
             }
           }
         }
@@ -64,6 +68,33 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       component: require.resolve("./src/templates/gallery.js"),
       context: {
         slug: gallery.childMarkdownRemark.fields.slug,
+      },
+    })
+  })
+
+  // Tag pages:
+  let tags = []
+  // Iterate through each post, putting all found tags into `tags`
+  posts.forEach(edge => {
+    if (get(edge, `childMarkdownRemark.frontmatter.tags`)) {
+      tags = tags.concat(edge.childMarkdownRemark.frontmatter.tags)
+    }
+  })
+  // Eliminate duplicate tags
+  tags = uniq(tags)
+
+  console.log("tags: ", tags)
+
+  // Make tag pages
+  tags.forEach(tag => {
+    const tagPath = `/tags/${kebabCase(tag)}/`
+
+    console.log(tag)
+    actions.createPage({
+      path: tagPath,
+      component: require.resolve("./src/templates/tags.js"),
+      context: {
+        tag,
       },
     })
   })

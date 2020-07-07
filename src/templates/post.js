@@ -48,7 +48,7 @@ const ContentBox = styled.div`
 `
 
 const PostTemplate = ({ data }) => {
-  const { title, image, date } = data.markdownRemark.frontmatter
+  const { title, image, date, tags } = data.markdownRemark.frontmatter
   const { html } = data.markdownRemark
 
   let date_string
