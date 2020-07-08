@@ -94,7 +94,7 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
       path: tagPath,
       component: require.resolve("./src/templates/tags.js"),
       context: {
-        tag,
+        tag: tag,
       },
     })
   })

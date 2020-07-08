@@ -32,7 +32,7 @@ export const query = graphql`
 
 const TagsPage = ({ data }) => {
   const allContent = data.allFile.nodes
-  // return <pre>{JSON.stringify(data.allFile.nodes, null, 2)}</pre>
+  // return <pre>{JSON.stringify(data, null, 2)}</pre>
   return <DisplayContent content={allContent} />
 }
 
