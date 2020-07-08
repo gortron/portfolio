@@ -47,6 +47,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
             fields {
               slug
             }
+            frontmatter {
+              tags
+            }
           }
         }
       }
@@ -76,6 +79,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   let tags = []
   // Iterate through each post, putting all found tags into `tags`
   posts.forEach(edge => {
+    if (get(edge, `childMarkdownRemark.frontmatter.tags`)) {
+      tags = tags.concat(edge.childMarkdownRemark.frontmatter.tags)
+    }
+  })
+  galleries.forEach(edge => {
     if (get(edge, `childMarkdownRemark.frontmatter.tags`)) {
       tags = tags.concat(edge.childMarkdownRemark.frontmatter.tags)
     }

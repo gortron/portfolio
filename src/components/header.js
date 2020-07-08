@@ -109,13 +109,13 @@ const Header = () => {
           <Link className="menu-item" to="/about">
             About
           </Link>
-          <Link className="menu-item" to="/words">
+          <Link className="menu-item" to="/tags/writing">
             Words
           </Link>
-          <Link className="menu-item" to="/photos">
+          <Link className="menu-item" to="/tags/photography">
             Photos
           </Link>
-          <Link className="menu-item" to="/code">
+          <Link className="menu-item" to="/tags/coding">
             Code
           </Link>
         </MobileMenu>
@@ -132,13 +132,13 @@ const Header = () => {
           <NavLink to="/about" activeClassName="current-page">
             About
           </NavLink>
-          <NavLink to="/words" activeClassName="current-page">
+          <NavLink to="/tags/writing" activeClassName="current-page">
             Words
           </NavLink>
-          <NavLink to="/photos" activeClassName="current-page">
+          <NavLink to="/tags/photography" activeClassName="current-page">
             Photos
           </NavLink>
-          <NavLink to="/code" activeClassName="current-page">
+          <NavLink to="/tags/coding" activeClassName="current-page">
             Code
           </NavLink>{" "}
         </nav>
