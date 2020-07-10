@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import styled from "@emotion/styled"
 import Layout from "../components/layout"
 import Hero from "../components/hero"
+import { Link } from "gatsby"
 
 export const query = graphql`
   query($slug: String!) {
@@ -37,24 +38,48 @@ const TitleBox = styled.div`
 const TitleText = styled.h1`
   font-size: 8vw;
 `
-const DateText = styled.p`
+const DateAndTagText = styled.p`
+  font-size: 12px;
+  padding-bottom: 0;
+  color: grey;
+`
+
+const TagLink = styled(Link)`
   font-size: 12px;
   padding-bottom: 0;
   color: grey;
   padding-bottom: 1.5rem;
+  text-decoration: none;
+  font-style: italic;
 `
+
 const ContentBox = styled.div`
-  padding: 0 10vw 0 10vw;
+  padding: 1.5rem 10vw 0 10vw;
 `
 
 const PostTemplate = ({ data }) => {
-  const { title, image, date } = data.markdownRemark.frontmatter
+  const { title, image, date, tags } = data.markdownRemark.frontmatter
   const { html } = data.markdownRemark
 
   let date_string
   if (date) {
     let dates = date.split("-")
     date_string = dates[0]
+  }
+
+  const renderTags = () => {
+    return (
+      <DateAndTagText>
+        Tags:{" "}
+        {tags.map((tag, idx) => {
+          if (idx < tags.length - 1) {
+            return <TagLink to={`/tags/${tag}`}>{tag + ", "}</TagLink>
+          } else {
+            return <TagLink to={`/tags/${tag}`}>{tag}</TagLink>
+          }
+        })}
+      </DateAndTagText>
+    )
   }
 
   return (
@@ -64,7 +89,8 @@ const PostTemplate = ({ data }) => {
         <TitleText>
           <i>{title}</i>
         </TitleText>
-        {date && <DateText>{date_string}</DateText>}
+        {date && <DateAndTagText>{date_string}</DateAndTagText>}
+        {tags && renderTags()}
       </TitleBox>
       <ContentBox>
         <div dangerouslySetInnerHTML={{ __html: html }}></div>
