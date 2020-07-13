@@ -37,6 +37,7 @@ const DisplayContent = ({ content }) => {
             } = content.childMarkdownRemark.frontmatter.image.sharp
             return (
               <div
+                key={content.childMarkdownRemark.fields.slug}
                 css={css`
                   width: ${(fluid.aspectRatio / rowAspectRatioSum) * 100}%;
                   display: inline-block;

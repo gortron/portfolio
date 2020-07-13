@@ -73,9 +73,17 @@ const PostTemplate = ({ data }) => {
         Tags:{" "}
         {tags.map((tag, idx) => {
           if (idx < tags.length - 1) {
-            return <TagLink to={`/tags/${tag}`}>{tag + ", "}</TagLink>
+            return (
+              <TagLink key={idx} to={`/tags/${tag}`}>
+                {tag + ", "}
+              </TagLink>
+            )
           } else {
-            return <TagLink to={`/tags/${tag}`}>{tag}</TagLink>
+            return (
+              <TagLink key={idx} to={`/tags/${tag}`}>
+                {tag}
+              </TagLink>
+            )
           }
         })}
       </DateAndTagText>
