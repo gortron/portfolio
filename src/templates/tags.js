@@ -32,8 +32,8 @@ export const query = graphql`
 
 const TagsPage = ({ data }) => {
   const allContent = data.allFile.nodes
-  // return <pre>{JSON.stringify(data, null, 2)}</pre>
-  return <DisplayContent content={allContent} />
+  return <pre>{JSON.stringify(data, null, 2)}</pre>
+  // return <DisplayContent content={allContent} />
 }
 
 export default TagsPage
