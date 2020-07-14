@@ -1,4 +1,5 @@
 import React from "react"
+import { graphql } from "gatsby"
 import DisplayContent from "../components/display-content"
 
 export const query = graphql`
@@ -16,13 +17,6 @@ export const query = graphql`
             title
             date(formatString: "dddd, MMMM D, YYYY-D/M/Y")
             tags
-            image {
-              sharp: childImageSharp {
-                fluid {
-                  ...GatsbyImageSharpFluid_withWebp
-                }
-              }
-            }
           }
         }
       }
