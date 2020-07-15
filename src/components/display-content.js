@@ -26,26 +26,20 @@ const DisplayContent = ({ content }) => {
         {rows.map(row => {
           const rowAspectRatioSum = sum(
             row.map(
-              content =>
-                content.childMarkdownRemark.frontmatter.image.sharp.fluid
-                  .aspectRatio
+              content => content.frontmatter.image.sharp.fluid.aspectRatio
             )
           )
           return row.map(content => {
-            const {
-              fluid,
-            } = content.childMarkdownRemark.frontmatter.image.sharp
+            const { fluid } = content.frontmatter.image.sharp
             return (
               <div
+                key={content.fields.slug}
                 css={css`
                   width: ${(fluid.aspectRatio / rowAspectRatioSum) * 100}%;
                   display: inline-block;
                 `}
               >
-                <ContentPreview
-                  key={content.childMarkdownRemark.fields.slug}
-                  content={content.childMarkdownRemark}
-                />
+                <ContentPreview key={content.fields.slug} content={content} />
               </div>
             )
           })

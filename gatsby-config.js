@@ -11,6 +11,8 @@ module.exports = {
     `gatsby-transformer-remark`,
     `gatsby-plugin-breakpoints`,
     "gatsby-background-image",
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-transformer-remark`,
       options: {
@@ -34,8 +36,6 @@ module.exports = {
         path: `content/images`,
       },
     },
-    `gatsby-plugin-sharp`,
-    `gatsby-transformer-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {

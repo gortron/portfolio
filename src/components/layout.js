@@ -40,6 +40,10 @@ const Layout = ({ children }) => {
             font-size: 20px;
           }
 
+          img {
+            cursor: pointer;
+          }
+
           /* For prismjs */
           .gatsby-highlight {
             font-size: 14px;

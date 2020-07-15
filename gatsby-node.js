@@ -97,7 +97,6 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
   tags.forEach(tag => {
     const tagPath = `/tags/${kebabCase(tag)}/`
 
-    console.log(tag)
     actions.createPage({
       path: tagPath,
       component: require.resolve("./src/templates/tags.js"),

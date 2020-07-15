@@ -1,12 +1,37 @@
 import React from "react"
-import usePosts from "../hooks/use-posts"
-import useGalleries from "../hooks/use-galleries"
+import { graphql } from "gatsby"
 import DisplayContent from "../components/display-content"
 
-const IndexPage = () => {
-  const posts = usePosts()
-  const galleries = useGalleries()
-  const allContent = posts.concat(galleries)
+export const query = graphql`
+  {
+    allMarkdownRemark(
+      filter: { frontmatter: { tags: { ne: "about" } } }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      nodes {
+        fields {
+          slug
+        }
+        frontmatter {
+          title
+          date(formatString: "dddd, MMMM D, YYYY-D/M/Y")
+          tags
+          image {
+            sharp: childImageSharp {
+              fluid(quality: 100) {
+                aspectRatio
+                ...GatsbyImageSharpFluid_withWebp
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`
+
+const IndexPage = ({ data }) => {
+  const allContent = data.allMarkdownRemark.nodes
   return <DisplayContent content={allContent} />
 }
 
