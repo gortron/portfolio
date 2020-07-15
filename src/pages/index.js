@@ -1,6 +1,5 @@
 import React from "react"
-import usePosts from "../hooks/use-posts"
-import useGalleries from "../hooks/use-galleries"
+import { graphql } from "gatsby"
 import DisplayContent from "../components/display-content"
 
 export const query = graphql`
