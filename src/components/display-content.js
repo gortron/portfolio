@@ -25,9 +25,10 @@ const DisplayContent = ({ content }) => {
       >
         {rows.map(row => {
           const rowAspectRatioSum = sum(
-            row.map(
-              content => content.frontmatter.image.sharp.fluid.aspectRatio
-            )
+            row.map(content => {
+              console.log(content)
+              return content.frontmatter.image.sharp.fluid.aspectRatio
+            })
           )
           return row.map(content => {
             const { fluid } = content.frontmatter.image.sharp

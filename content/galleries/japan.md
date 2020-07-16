@@ -2,7 +2,7 @@
 title: japan
 tags:
   - photography
-image: ../images/jihanki1.jpg
+image: ../images/japan_jihanki1.jpg
 date: 2016-02-07T00:08:16.641Z
 galleryImages:
   - ../images/japan_ginza_internationalforum.jpg
