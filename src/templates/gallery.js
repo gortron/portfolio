@@ -42,7 +42,7 @@ export const query = graphql`
 const GalleryTemplate = ({ data }) => {
   const { galleryImages } = data.markdownRemark.frontmatter
   const breakpoints = useBreakpoint()
-  const itemsPerRow = breakpoints.sm ? 1 : 3
+  const itemsPerRow = breakpoints.sm ? 1 : 2
   const rows = chunk(galleryImages, itemsPerRow)
 
   // return <pre>{JSON.stringify(rows, null, 2)}</pre>
