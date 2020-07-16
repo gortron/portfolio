@@ -1,10 +1,51 @@
 ---
 title: japan
 tags:
-  - photography
-image: ../images/jihanki1.jpg
-date: 2020-07-16T00:08:16.641Z
-galleryImages:
-  - ../images/ginza_internationalforum.jpg
-  - ../images/akihabara_wakui1.jpg
+- photography
+  image: ../images/jihanki1.jpg
+  date: 2016-02-07T00:08:16.641Z
+  galleryImages:
+- ../images/japan_ginza_internationalforum.jpg
+- ../images/japan_akihabara_wakui1.jpg
+- ../images/japan_bwskyline.jpg
+- ../images/japan_geisha_3.jpg
+- ../images/japan_ginza_autobiography.jpg
+- ../images/japan_ginza_nakaginwakui.jpg
+- ../images/japan_ginza_skylinebw.jpg
+- ../images/japan_harajuku_chef.jpg
+- ../images/japan_harajuku_jihankiwakui.jpg
+- ../images/japan_hiroshima_memorial.jpg
+- ../images/japan_hiroshima_prayer.jpg
+- ../images/japan_jihanki1.jpg
+- ../images/japan_jihanki2.jpg
+- ../images/japan_kyoto_arashiyahallucination1.jpg
+- ../images/japan_kyoto_arashiyahallucination2.jpg
+- ../images/japan_kyoto_arashiyamaghosts.jpg
+- ../images/japan_kyoto_bonzai.jpg
+- ../images/japan_kyoto_dojo.jpg
+- ../images/japan_kyoto_exteriordecoration.jpg
+- ../images/japan_kyoto_gardenpath.jpg
+- ../images/japan_kyoto_geishatimeless.jpg
+- ../images/japan_kyoto_inari.jpg
+- ../images/japan_kyoto_kinkurajispring.jpg
+- ../images/japan_kyoto_kiyomizudera.jpg
+- ../images/japan_kyoto_legs.jpg
+- ../images/japan_kyoto_river.jpg
+- ../images/japan_kyoto_salaryman.jpg
+- ../images/japan_kyoto_squadlanternwakui.jpg
+- ../images/japan_lanterns.jpg
+- ../images/japan_onomichi_dumplings.jpg
+- ../images/japan_onomichi_ferryman_1.jpg
+- ../images/japan_onomichi_ribbonchapel.jpg
+- ../images/japan_onomichi_ribbonchapellines.jpg
+- ../images/japan_roppongi_cafeaulait.jpg
+- ../images/japan_shibuya_nightwalk.jpg
+- ../images/japan_truckdudes.jpg
+- ../images/japan_tunnelman.jpg
+- ../images/japan_windowdude.jpg
+- ../images/japan_yamanouchi_hanumanfinal.jpg
+- ../images/japan_yamanouchi_hanumanlove.jpg
+- ../images/japan_yamanouchi_hanumanrun.jpg
+- ../images/japan_yamanouchi_ryokan2.jpg
+- ../images/japan_yamanouchi_trainspotting.jpg
 ---

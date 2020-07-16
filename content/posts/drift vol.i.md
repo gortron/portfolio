@@ -5,7 +5,7 @@ slug: drift-vol-i
 tags:
   - writing
   - drift
-image: ../images/ginza_autobiography.jpg
+image: ../images/japan_ginza_autobiography.jpg
 ---
 
 Good morning,
