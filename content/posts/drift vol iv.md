@@ -7,17 +7,21 @@ tags:
 image: ../images/hongkong_mountaincityplantco.jpg
 ---
 
-`dispatch from 22˚16'46", 114˚10'57"`
+_dispatch from 22˚16'46", 114˚10'57"_
 
 Good morning bebs 🌹
 
-## Hong Kong is a relentless and unapologizing city, whose beauty grows from its uncertain identity. My impression was first shaped by the clashing legacy of British Colonialism and endemic culture, best illustrated by subway stops which read from _Quarry Bay, Admiralty,_ and _Fortress Hill,_ to _Mong Kok, Sai Ying Pun,_ and _Wan Chai._ The subtropical humidity and vegetation, harmonizing with the six-toned Cantonese dialect, leave the city to dance a cadence which is distinctly not-Western. However there is a disproportionate Western influence from the expats living here which can be felt, for instance, in the abundance of café’s serving flat whites, or restaurants advertising organic dishes. This conflict manifests, in my mind, as a tremendous vibrance; a garish, sooty, thronging, and ultimately charismatic vibrance. It is at least as easy to love Hong Kong as it is to hate it. The choice, as always, is yours.
+Hong Kong is a relentless and unapologizing city, whose beauty grows from its uncertain identity. My impression was first shaped by the clashing legacy of British Colonialism and endemic culture, best illustrated by subway stops which read from _Quarry Bay, Admiralty,_ and _Fortress Hill,_ to _Mong Kok, Sai Ying Pun,_ and _Wan Chai._ The subtropical humidity and vegetation, harmonizing with the six-toned Cantonese dialect, leave the city to dance a cadence which is distinctly not-Western. However there is a disproportionate Western influence from the expats living here which can be felt, for instance, in the abundance of café’s serving flat whites, or restaurants advertising organic dishes. This conflict manifests, in my mind, as a tremendous vibrance; a garish, sooty, thronging, and ultimately charismatic vibrance. It is at least as easy to love Hong Kong as it is to hate it. The choice, as always, is yours.
+
+---
 
 **Where I am:** Hong Kong
 
 **Where I am going:** Singapore
 
-## **What I’m chewing on:** What brings out the best in you? What are your secret tactics for bringing out the best in others?
+**What I’m chewing on:** What brings out the best in you? What are your secret tactics for bringing out the best in others?
+
+---
 
 ## On Imperfection
 
