@@ -9,52 +9,46 @@ image: ../images/hongkong_mountaincityplantco.jpg
 
 `dispatch from 22˚16'46", 114˚10'57"`
 
-Good morning _mes semblables_,
+Good morning bebs 🌹
 
-I want to open today’s drift with an invocation, an exploration on the Japanese concept of _wabi sabi_. _Wabi sabi_ is one of those fantastic, exotic expressions which bares no easy translation. It is simultaneously a philosophy, cultural ideal, and aesthetic. It has a lot to do with surrendering to the transience of life, and celebrating the imperfections which grow from that garden bed. For you and I, for we raised in the west, this is a horse pill to swallow: we were taught differently. Going back to Plato and the _Allegory of the Cave_, there has been an understanding in the west that perfection exists, albeit out of our reach. That there is also a cultural attitude that perfection is something we should measure our selves and our efforts against is an unanswerable paradox.
+## Hong Kong is a relentless and unapologizing city, whose beauty grows from its uncertain identity. My impression was first shaped by the clashing legacy of British Colonialism and endemic culture, best illustrated by subway stops which read from _Quarry Bay, Admiralty,_ and _Fortress Hill,_ to _Mong Kok, Sai Ying Pun,_ and _Wan Chai._ The subtropical humidity and vegetation, harmonizing with the six-toned Cantonese dialect, leave the city to dance a cadence which is distinctly not-Western. However there is a disproportionate Western influence from the expats living here which can be felt, for instance, in the abundance of café’s serving flat whites, or restaurants advertising organic dishes. This conflict manifests, in my mind, as a tremendous vibrance; a garish, sooty, thronging, and ultimately charismatic vibrance. It is at least as easy to love Hong Kong as it is to hate it. The choice, as always, is yours.
 
-This morning, I encourage you to question your commitment to pursuing perfection or embracing imperfection. I, for one, find the celebration of imperfection compelling. It’s difficult for me to relate to something which is perfect; something which is timeless. How could I appreciate such a thing? The best I can do is admire it. But, imperfection is yummy. I can relate to imperfection. To me, a thing that is flawed and mortal opens into an entire field of grief and sorrow which I can feel for it, which makes it the more beautiful. In my eyes, beauty is about the range and depth of what you can feel for a thing. So: to transience, imperfection, and _wabi sabi_.
+**Where I am:** Hong Kong
 
-//
+**Where I am going:** Singapore
 
-Thank you to those of you who wrote in, articulating what greatness means to you. I’m humbled to be on the receiving end of such constructive, insightful commentary. You are the apples of my eye.
+## **What I’m chewing on:** What brings out the best in you? What are your secret tactics for bringing out the best in others?
 
-There were two camps in your responses on greatness:
+## On Imperfection
 
-1. **GREATNESS IS PRESENCE:** Most of you hold that greatness is measured as a quality of one’s character. Greatness in this camp is described as bold, confident, and courageous. The ‘greats’ carry no regrets, having given themselves completely towards their goal, great or small. Greatness is something that exists for someone in the present. Greatness, for this camp of thinkers, is democratic and attainable for all.
-2. **GREATNESS THROUGH ACTION:** Others contend that greatness is the sum of one’s bold, successful actions. To this camp, the ‘greats’ are innovators and leaders. Greatness is something that exists for someone because of the past. Greatness, for this camp, is something that is reserved for eminence.
+I apologize for last week’s prompt. I asked you about your imperfections, and whether you try to sand their edges, or embrace them as they are. As one of you pointed out in your response (quoted below), to denote one of your qualities as imperfect is to implicitly say that there is such a thing as aperfect quality. If you or I have a perfect quality, dear reader, I would love to hear what it might be.
 
-It’s no mistake that both of these themes of responses arose. You and I intuit that greatness exists in different scopes. There are names which echo through time because they reshaped civilization, and there are people in our community who are loved and respected. We know that each is great, in their own right.
+The questions I was trying to get at, though, are what is flawed about you? What do you find difficult to love in your personality? How do you cope with that part of your self? Thank you to those of you who wrote in: it takes courage to talk about weakness. From your responses, there are three lessons.
 
-Perhaps then, the community’s definition of greatness can be phrased like this: _greatness is a confident presence which one earns through a lifetime by committing oneself to act boldly, give an absolute effort, and thereby achieve their goals (grand or humble) and respect from others._
+The first thing I noticed is that each of you opened up about your flaws in the same breath that you detailed your strengths, almost without exception. You would talk about how your confidence can lend you a commanding presence or an intimidating one, or about how your short memory allows you to forgive and unfortunately to forget. So, the first lesson is this: **Our greatest strength and our greatest weakness are two sides of the same coin. It’s the same characteristic, manifesting in different contexts.**
 
-Some delicious quotable nuggets from you:
+The second observation is that our flaws do not exist in a vacuum. Most readers articulated their weaknesses by describing generalized interactions with others. We are as much what we are as what we are not, which is to say that part of our understanding of who we are is only revealed to us through our interactions and our understanding of others. Strength and weakness are not absolutes: they exist relatively. Not only do our loved ones help us understand our weakness, they also help us compensate for them. We know from our own experience that we have provided small acts of service behind our friends’ backs. So, whether we choose to fix or embrace our flaws, we can’t move alone; we are completed by others. The second lesson is this: **When we are courageous and vulnerable about what makes us feel weak, the universe moves to balance us and make us more whole.**
 
-- “For me that means the ability to take risk, bet on the slim margin, to be fearless in your belief and your course, to be bold.”
-- "Simply put, after my time on Earth is up I want people to say that I was a great human… How they should strive to be like me when they grow up.”
-- "Greatness is a distant light on the horizon that I am always in pursuit of. Living my life striving to achieve greatness is in itself a ‘great’ pursuit. If I feel as though I am performing at my highest octane then I will have achieved greatness for myself.”
-- I keep coming back to that Shakespeare quote, "Some are born great, others achieve greatness, and some have greatness thrust upon them."
-- “Greatness is doing the hard thing—the right thing—again, and again, and again.”
+There is a wonderful, tragic irony in our flaws. What we believe is unlovable about us is what others perceive as lovable about us. The people who stick, the ones that matter (you, reader), love us as much for our flaws as for our gifts. Each of us knows how to taunt with our strengths, but our weaknesses are precisely elements of our personality which we are awkward and unwieldy with. Our flaws are the most authentic pieces of us. They are our deepest channels for empathy and connection, and it’s a sad trick that we feel so compelled to conceal them. There’s a beautiful quote from an _imam_ which goes, “humility is the shortest distance between two people.” The third lesson, then: **Replace your posturing with humility. If you hide behind your strengths, no one will find you.**
 
-//
+From the constituents:
 
-**Where I am:** Hiroshima, Japan
+- “I actually find this question troubling. Because it implies that it is possible to have perfect qualities at all. I do not think there is a single quality about me that is perfect. There are many things that I love about myself and would never change, but I do not think humans exist for perfection.”
+- “In business I have always said that our job is to ‘accentuate strength and compensate for weakness’ of those around us. Know what they are good at, cultivate and make use of that strength and try to work around the bad stuff. It’s like that in life and in relationships, too. Appreciate your friends for their good traits and forgive them for their bad traits.”
+- “Imperfection is found in excess. Perfection is a state of balance.”
+- “I think there is an overarching theme here. I think humans are created imperfect so that we can rely on others to help us grow as individuals. I think humans require a sense of community so that we can learn about our imperfections from others.”
 
-**Where I’m going:** Hong Kong, China
+---
 
-**What I’m chewing on:** What is a specific habit or character quality you have that you feel is imperfect? Do you try to fix it, or do you embrace it?
+## The Thin Slice:
 
-Until next week’s dispatch, dear reader. I think you’re pretty great. –G
-
-//
-
-The Thin Slice:
-
-- Finished a Russian novel.
-- Hit my head a dozen times on low entryways. There’s an apparently inverse relation between accommodation for foreigners and distance from Tokyo.
-- Was invited to a home-cooked & hand-cut sushi dinner.
-- Ate pizza (“Napori Sarami") and a hamburger. Don’t judge me.
-- Lost my camera on the bus.
-- Retrieved my lost camera from the bus station lost and found, because Japan is the most civilized country on Earth.
-- Spent Saturday night trying to explain Sophia Coppola’s Lost in Translation to a bartender whose English was, predictably, a 2/10.
-- Walked 14.2 miles in a single day (it was today. à bientôt, lovelies.)
+- Ate okonomiyaki five times in three days (crepe, cabbage, bean sprouts, bacon, egg, dried fish, and “sauce”).
+- Found myself conflicted when the young women running the Hiroshima hostel, without prompt, began calling me daddy.
+- Went behind the bar and tended at said hostel because, honestly, if you’ve reached a point where people are calling you daddy you can get away with anything.
+- Started a dance party in the street at 4am.
+- Was left raw from learning about the bombing of Hiroshima at the end of WWII from the perspective of the vanquished.
+- Learned that Madagascar was settled by Indonesians, and not sub-Saharan Africans. How crazy is that!? Indonesia is 4,000 miles further away from Madagascar than modern-day Mozambique! How about that!
+- Practiced the _gudetama_ dance with an octogenarian.
+  Had a big first: a day where I did not see another white person.
+- Connected with someone from one of your introductions. - Alchemy turned drinks into dinner and back into drinks. Thank you to those of you who have connected me with your people so far—these have been fantastic moments on my journey.
+- Coordinated meeting up with several of you on the road! If you’re interested in drifting with me, let me know; I’m certainly interested in drifting with _you_. –G

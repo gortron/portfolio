@@ -2,6 +2,7 @@
 title: japan
 tags:
   - photography
+  - drift
 image: ../images/japan_jihanki1.jpg
 date: 2016-02-07T00:08:16.641Z
 galleryImages:
