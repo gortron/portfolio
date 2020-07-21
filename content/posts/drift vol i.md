@@ -1,7 +1,6 @@
 ---
 title: drift vol.i
 date: 2016-02-07T18:39:53.637Z
-slug: drift-vol-i
 tags:
   - writing
   - drift
