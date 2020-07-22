@@ -15,6 +15,7 @@ I’d like to open the fifth volume of drift with a passage from _East of Eden_:
 
 > “Sometimes a kind of glory lights up the mind of a man. It happens to nearly everyone. You can feel it growing or preparing like a fuse burning toward dynamite. It is a feeling in the stomach, a delight of the nerves, of the forearms. The skin tastes the air, and every deep-drawn breath is sweet. Its beginning has the pleasure of a great stretching yawn; it flashes in the brain and the whole world glows outside your eyes. A man may have lived all of his life in the gray, and the land and trees of him dark and somber. The events, even the important ones, may have trooped by faceless and pale. And then -the glory- so that a cricket song sweetens his ears, the smell of the earth rises chanting to his nose, and dappling light under a tree blesses his eyes. Then a man pours outward, a torrent of him, and yet he is not diminished. And I guess a man’s importance in the world can be measured by the quality and number of his glories. It is a lonely thing but it relates us to the world. It is the mother of all creativeness, and it sets each man separate from all other men.”
 
+
 Sharing this with you isn’t to say I’m in a ‘glory’. I got my ass kicked by the suffocating, magnificent humanity of Hong Kong. I couldn’t write. I barely slept. I got stood up. I felt an unfair malice towards many, and I wasn’t sorry for any of it. Not every day will be defined by a sense of wonder and adventure. I will not always succeed on the road, if we choose to define a successful trip that way (I don’t). I carry no false expectations. I would not be wandering beyond my horizon if traveling were a series of easy moments. I won’t offer a perfect journey (I can’t), but I can promise that I will present my self authentically to you for the duration. I’m not seeking certainties and I’m not trying to put the world in my pocket. It’s the doubt, that _mystery_, which I’m after.
 
 ---
@@ -36,7 +37,7 @@ From the drifters:
 
 **Where I’m going:** Bali, Indonesia
 
-**What I’m chewing on:** Please share one of your favorite pieces of writing. It can be a pithy quote, prose that stuck with you, an article which changed your opinion—the choice is yours, friend—but please send me something which moves you. Something you keep close to your heart. (you can read mine here—doubling down on Steinbeck today because I miss the hills of California)
+**What I’m chewing on:** Please share one of your favorite pieces of writing. It can be a pithy quote, prose that stuck with you, an article which changed your opinion—the choice is yours, friend—but please send me something which moves you. Something you keep close to your heart. (you can [read mine here](http://timshel.org/timshel.php)—doubling down on Steinbeck today because I miss the hills of California)
 
 Thinking of you. –G
 
