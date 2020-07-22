@@ -1,56 +1,65 @@
 ---
-title: drift vol.v
-date: 2016-03-06T18:39:53.637Z
+title: drift vol.vi
+date: 2016-03-13T18:39:53.637Z
 tags:
   - writing
   - drift
-image: ../images/hongkong_twilight.jpg
+image: ../images/bali_nebula3.jpg
 ---
 
-_dispatch from 01°18'17", 103°51'33"_
+_dispatch from -08°39'32", 115°07'50"_
 
-Good afternoon lovelies, and thank you for bearing with some technical difficulties.
+## The Troubles
 
-I’d like to open the fifth volume of drift with a passage from _East of Eden_:
+I’m curious to learn the histories of each port I pass through. It’s a compulsive need to know where I am in the story, which chapter it is. I’ll read what was here before me and imagine the events to come. The chapter of Bali I felt most needed to be read is one I first heard from one of you in conversation. The chapter is called ‘The Troubles,’ and I’ll relate it to you here briefly.
 
-> “Sometimes a kind of glory lights up the mind of a man. It happens to nearly everyone. You can feel it growing or preparing like a fuse burning toward dynamite. It is a feeling in the stomach, a delight of the nerves, of the forearms. The skin tastes the air, and every deep-drawn breath is sweet. Its beginning has the pleasure of a great stretching yawn; it flashes in the brain and the whole world glows outside your eyes. A man may have lived all of his life in the gray, and the land and trees of him dark and somber. The events, even the important ones, may have trooped by faceless and pale. And then -the glory- so that a cricket song sweetens his ears, the smell of the earth rises chanting to his nose, and dappling light under a tree blesses his eyes. Then a man pours outward, a torrent of him, and yet he is not diminished. And I guess a man’s importance in the world can be measured by the quality and number of his glories. It is a lonely thing but it relates us to the world. It is the mother of all creativeness, and it sets each man separate from all other men.”
+In 1965, six Generals of the Indonesian Army were assassinated in a failed coup d’état. The army controlled the narrative of the events of what would come after, a narrative which would not be questioned and challenged until many years later. Along with the president, the army quickly placed the blame superficially on the communist party. While the party had the support of several million farmers and craftsmen, it was not trusted by other political groups and religious leaders. Anti-communist violence spread across the principal island of Java, and eventually to Bali and other Indonesian islands. The army combed through the country, killing known and suspected communists. They were aided by Americans stationed in Indonesia who provided a list of target names to the Indonesian Army. Many rural areas of Indonesia took the anti-communist purge into their own hands, butchering their neighbors through the humid nights. There is no number for the dead; estimates range, and 500,000 is an often quoted figure. In both brutality and scope, it was one of the worst massacres of the 21st century. It is also one of the least talked about.
 
-
-Sharing this with you isn’t to say I’m in a ‘glory’. I got my ass kicked by the suffocating, magnificent humanity of Hong Kong. I couldn’t write. I barely slept. I got stood up. I felt an unfair malice towards many, and I wasn’t sorry for any of it. Not every day will be defined by a sense of wonder and adventure. I will not always succeed on the road, if we choose to define a successful trip that way (I don’t). I carry no false expectations. I would not be wandering beyond my horizon if traveling were a series of easy moments. I won’t offer a perfect journey (I can’t), but I can promise that I will present my self authentically to you for the duration. I’m not seeking certainties and I’m not trying to put the world in my pocket. It’s the doubt, that _mystery_, which I’m after.
-
----
-
-Responses to _what brings out your best_ were as diverse as the audience. If there were emergent themes on tactics to bring out our best, they were lost on me. So, I will speak for myself, and allow the readers to speak for themselves.
-
-Uncertainty brings out my best. Parties where I don’t know a soul; not knowing if someone will continue to love me as my flaws begin to precipitate; first time with an untested recipe; being unsure of how a client will react, so preparing for all scenarios; first day in an unfamiliar city; the first kiss. What is so effective about uncertainty in bringing out my best is that it kills my ego. I am not afraid to be the beginner. Whether by capturing my curiosity or by distracting me from insecurity, that incessant internal voice is silenced which just leaves… me. All of me, broadcasting at a FM frequency of relaxed confidence.
-
-From the drifters:
-
-- “Empathy. I try to make everyone’s voices feel important and feel heard and feel affecting. I try equally hard to make people feel crucial to a project or just to a night out. The more crucial people feel the better they perform both professionally and personally, and I love when I can help with that.“
-- "Don’t try to ensure success, remove the shame from failure. That’s everything.”
-- “To bring out the best in others, I always approach every interaction with everyone I meet, no matter what, like they are a person I’ve known and loved for a long long time. It’s an approach inspired by my grandfather, who taught me to treat everyone like an old friend. It happens to also make you a very memorable person, but more importantly is what it does in the moment: makes people feel valued and worthy or your attention.”
-- “I also think providing a bit of push back brings out the best in others. I think a lot of women and men say what they think wants to be heard, but that just fosters a really destructive mediocrity.”
+It’s a difficult chapter, though it doesn’t make Bali less than it is. No, the island and its culture are more beautiful for its having happened. The wonder of the elaborate and sprawling rice terraces, and in the uncoordinated cicadidae and simian choirs of the jungle, and of floating in the warm salt bath of the Indian Ocean as the monsoon rains fall; that wonder is stirred as paint on a palette with the shame in the depth of human fear and savagery, and the resulting color is dark and deep. It’s a shade which reminds us that most things reveal themselves to be more resilient than we once thought.
 
 ---
 
-**Where I am:** Singapore
+## From the Editor
 
-**Where I’m going:** Bali, Indonesia
+**Where I am:** Bali, Indonesia
 
-**What I’m chewing on:** Please share one of your favorite pieces of writing. It can be a pithy quote, prose that stuck with you, an article which changed your opinion—the choice is yours, friend—but please send me something which moves you. Something you keep close to your heart. (you can [read mine here](http://timshel.org/timshel.php)—doubling down on Steinbeck today because I miss the hills of California)
+**Where I’m going:** Colombo, Sri Lanka (Please let me know if you have been and have travel recommendations. I’ve a week with nothing planned.)
 
-Thinking of you. –G
+**What I’m chewing on:** What is something you’ve surrendered? Tell me about a battle you’ve lost; an attitude, struggle, possession, or belief which you have relinquished in time.
+
+Not a day goes by that I’m not missing you and thinking of you in some way. Take good care of each other, my loves. –G
 
 ---
 
-## The Thin Slice:
+## On Light and Storms
 
-- Met up with one of you! Drew and I will be traveling through Indonesia this week.
-- Finished three books (Guns, Germs, and Steel by Neil Diamond, Between the World and Me by Ta-Nehisi Coates, and Men Explain Things to Me by Rebecca Solnit—liberal drifters, eat your hearts out).
-- Ate 40+ dumplings (more like xiao long WOW)
-- Made friends from six different countries.
-- Was myself in three different countries.
-- Got wildly lost looking for two things: an abandoned fishing village in Hong Kong’s Outer Territories, and some peace of mind. Hoofed 17 miles, and only found one of the two.
-- Had a beer in a bar from a colonial-era bar which has endured through Singapore’s aggressive modernization in the second half of the 20th century.
-- Listened to a brass band cover I Want You Back in 75% humidity.
-- Witnessed a Filipino man karaoke My Way, a little drunk and demonstrably nostalgic. It was explained to me by other patrons that this song, sung in such a manner, is something of a national _pinoy_ tradition.
+I continue to be impressed with the diversity and volume of your responses, and I thank you for writing in. Kerouac, Camus, and Epictetus were represented; there were articles, poems, and passages. Writings shared were insightful to what matters to each of you, and why. But, life is pressing. Let’s move quickly. Two of you volunteered the following passage, which I also have kept a copy of in the file cabinets in the offices of my heart.
+
+> “Our deepest fear is not that we are inadequate. Our deepest fear is that we are powerful beyond measure. It is our light, not our darkness, that most frightens us. We ask ourselves, who am I to be brilliant, gorgeous, talented and fabulous? Actually, who are you not to be? You are a child of God. Your playing small doesn’t serve the world. There’s nothing enlightened about shrinking so that other people won’t feel insecure around you. We were born to make manifest the glory of God that is within us. It’s not just in some of us; it’s in everyone. And as we let our own light shine, we unconsciously give other people permission to do the same. As we are liberated from our own fear, our presence automatically liberates others.” _Marianne Williamson_
+
+Consider this analogy to the passage: we have no choice in the present to be anywhere but where we are. We have the agency to change future moments, but not the present one. Each present moment is a scene, a feeling, beyond our control. Yet, how far do we strive to put obstacles between ourselves and the present? We are always posturing and planning to change it into something it isn’t, even though we know any change won’t unfold until some other moment, minutes or years further on. We do this because the present moment overpowers us; presence is a sensation so glorious that it is unbearable. Maybe you’ve held real presence for a kiss or a particularly beautiful view, but who can say they’ve held it longer than they haven’t? We’ll do anything to avoid or anesthetize the true experience of the present. So, it is the present, not the future, that most frightens us. I want to advise you to rip open the iris which keeps the light out, which keeps the present out, and that doing so is an imperative for the human spirit, but I can’t. I fail at this more often than I succeed, of course. If there exists a secret to presence, it’s hidden to me.
+
+Maybe, if there were a trick to deep presence, that trick would be called surrender. Maybe, grasping at the hope of “more" in future moments is a thin screen between us and painful, ecstatic presence. Maybe, Haruki Murakami articulates surrender well.
+
+> “Sometimes fate is like a small sandstorm that keeps changing directions. You change direction but the sandstorm chases you. You turn again, but the storm adjusts. Over and over you play this out, like some ominous dance with death just before dawn. Why? Because this storm isn’t something that blew in from far away, something that has nothing to do with you. This storm is you. Something inside of you. So all you can do is give in to it, step right inside the storm, closing your eyes and plugging up your ears so the sand doesn’t get in, and walk through it, step by step. There’s no sun there, no moon, no direction, no sense of time. Just fine white sand swirling up into the sky like pulverized bones. That’s the kind of sandstorm you need to imagine.
+>
+> And you really will have to make it through that violent, metaphysical, symbolic storm. No matter how metaphysical or symbolic it might be, make no mistake about it: it will cut through flesh like a thousand razor blades. People will bleed there, and you will bleed too. Hot, red blood. You’ll catch that blood in your hands, your own blood and the blood of others.
+>
+> And once the storm is over you won’t remember how you made it through, how you managed to survive. You won’t even be sure, in fact, whether the storm is really over. But one thing is certain. When you come out of the storm you won’t be the same person who walked in. That’s what this storm’s all about.” _Haruki Murakami_
+
+---
+
+## The Thin Slice
+
+- Was held hostage by a hotel for Bali’s national day of silence and reflection.
+- Discovered the elemental magic of roadside sate and banana juice.
+- Danced in the streets to the maddening rhythm of Indonesian drums in the night.
+- Witnessed a solar eclipse.
+- Got a hair tie tan on my wrist. Oops.
+- Trekked through a jungle.
+- Washed my self in the eleven holy springs of Pura Tirta Empul.
+- Joined a scooter gang.
+- Surfed the mythical Canggu pipe. At least, gave it a varsity effort.
+- Waited out the monsoon afternoon rains in a Hindu temple.
+- Was struck by a stick a monkey threw at me. Fucking monkeys.
+- Published this volume of the drift from a hammock.
