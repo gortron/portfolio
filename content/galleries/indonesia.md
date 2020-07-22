@@ -3,8 +3,8 @@ title: indonesia
 tags:
   - photography
   - drift
-image: ../images/hongkong_skylinelight.jpg
-date: 2016-02-28T00:08:16.641Z
+image: ../images/bali_riceroadriders.jpg
+date: 2016-03-13T00:08:16.641Z
 galleryImages:
   - ../images/bali_traplord.jpg
   - ../images/bali_biography.jpg
@@ -17,12 +17,12 @@ galleryImages:
   - ../images/bali_goldogohogoh.jpg
   - ../images/bali_redogohogoh.jpg
   - ../images/bali_fountainheads.jpg
-  - ../images/bali_gordonsunset.jpg
   - ../images/bali_indianajones.jpg
   - ../images/bali_lawnchairs.jpg
   - ../images/bali_lawnswing.jpg
   - ../images/bali_thelawn.jpg
   - ../images/bali_bwsunset.jpg
+  - ../images/bali_gordonsunset.jpg
   - ../images/bali_nebula1.jpg
   - ../images/bali_nebula2.jpg
   - ../images/bali_nebula3.jpg
