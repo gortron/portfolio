@@ -1,5 +1,5 @@
 ---
-title: indonesia
+title: sri lanka
 tags:
   - photography
   - drift
