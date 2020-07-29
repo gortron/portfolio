@@ -18,6 +18,7 @@ galleryImages:
   - ../images/bali_redogohogoh.jpg
   - ../images/bali_fountainheads.jpg
   - ../images/bali_indianajones.jpg
+  - ../images/bali_treeclimber.jpg
   - ../images/bali_lawnchairs.jpg
   - ../images/bali_lawnswing.jpg
   - ../images/bali_thelawn.jpg
@@ -31,5 +32,4 @@ galleryImages:
   - ../images/bali_riceroadriders.jpg
   - ../images/bali_walterandjuliette_1.jpg
   - ../images/bali_sunsetdrex.jpg
-  - ../images/bali_treeclimber.jpg
 ---
